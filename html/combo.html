@@ -16,6 +16,29 @@
     <header>
       <h1 style="text-align:center;">Muller-Layer Illusion Experiment</h1>
     </header> 
+      
+    <div id='ex_pic_container' class='ex_pic_container'>
+        <div class='tags'>
+            <div class="subtag" id='ml1_tag' one>1</div>
+            <div class="subtag" id='ml2_tag'>2</div>
+            <div class="subtag" id='ml3_tag'>3</div>
+            <div class="subtag" id='ml4_tag'>4</div>
+            <div class="subtag" id='ml5_tag'>5</div>
+            <div class="subtag" id='ml6_tag'>6</div>
+        </div>
+    <div class = 'pic_container' id='ml1'> 1
+    </div>
+    <div class = 'pic_container' id='ml2' style="display: none;"> 2
+    </div>
+    <div class = 'pic_container' id='ml3' style="display: none;"> 3
+    </div>
+    <div class = 'pic_container' id='ml4' style="display: none;"> 4
+    </div>
+    <div class = 'pic_container' id='ml5' style="display: none;"> 5
+    </div>
+    <div class = 'pic_container' id='ml6' style="display: none;"> 6
+    </div>
+    </div>
 
       
       
@@ -26,10 +49,14 @@
       
       
       
-      
+    
     <script type="application/javascript">
         function showupFunction(){
-                document.getElementById("enter").style.display = "none"
+            document.getElementById("enter").style.display = "none"
+        }
+        function showupSecond(){
+            document.getElementById('ml1').style.display = 'none'
+            document.getElementById('ml2').style.display = 'block'
         }
     </script>
       

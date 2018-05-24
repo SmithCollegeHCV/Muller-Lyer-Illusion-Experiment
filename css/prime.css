@@ -48,3 +48,26 @@ i {
                 color: aliceblue;
             }
             
+.tags{
+    background-color: white;
+    width: 500px;
+    height: 50px;
+    margin: auto;
+}
+
+.subtag{
+    background-color: beige;
+    width: 80px;
+    height: 50px;
+    border-top-right-radius: 20px;
+    float: left;
+    margin-left: 3px;
+}
+
+.pic_container{
+    background-color: beige;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    margin-top: 5px;
+}
