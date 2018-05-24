@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    <div class = 'pic_container' id='ml2' style="display: block;"> 
+    <div class = 'pic_container' id='ml2' style="display: none;"> 
         <div id='sl2'> 
             <div id ="infoi2">
               <img src="../image/ml-2.png"/>
@@ -49,7 +49,7 @@
         </div>
     </div>
 
-    <div class = 'pic_container' id='ml3' style="display: block;"> 
+    <div class = 'pic_container' id='ml3' style="display: none;"> 
         <div id='sl3'> 
             <div id="infoi3">
               <img src="../image/ml-3.png"/>
@@ -59,7 +59,7 @@
             </div>
         </div>
     </div>
-    <div class = 'pic_container' id='ml4' style="display: block;"> 
+    <div class = 'pic_container' id='ml4' style="display: none;"> 
         <div id='sl4'> 
             <div id="infoi4">
               <img src="../image/ml-4.png"/>
@@ -69,7 +69,7 @@
             </div>
         </div>
     </div>
-    <div class = 'pic_container' id='ml5' style="display: block;"> 
+    <div class = 'pic_container' id='ml5' style="display: none;"> 
         <div id='sl5'> 
             <div id="infoi5">
               <img src="../image/ml-5.png"/>
@@ -79,7 +79,7 @@
             </div>
         </div>
     </div>
-    <div class = 'pic_container' id='ml6' style="display: block;"> 
+    <div class = 'pic_container' id='ml6' style="display: none;"> 
         <div id='sl6'> 
             <div id="infoi6">
               <img src="../image/ml-6.png"/>
@@ -94,14 +94,14 @@
       
       
       
-<!--
+
     <div id='timer'>    
         <p class="countdown"> You have <span id="countdowntimer">10 </span> seconds to answer.</p>        
         <script>
             var containers=["ml1","ml2","ml3","ml4","ml5","ml6"];
             function CountdownTimer(i){
                 console.log(containers[i]);
-                var timeleft = 10;
+                var timeleft = 11;
                 var Timer = setInterval(function(){
                 timeleft--;
                 document.getElementById("countdowntimer").textContent = timeleft;
@@ -115,12 +115,19 @@
                     document.getElementById(containers[i]).style.display="none";
                 }
             }
-            for (var i=0; i<containers.length; i++){
-                setTimeout(CountdownTimer(i),10000);
-            }
+
+            (function loop(i){
+                setTimeout(function(){
+                    CountdownTimer(i);
+                    if (i++ <= 4){
+                        loop(i);
+                    }
+                }, 10000);
+            })(0);
+
         </script>
     </div> 
--->
+
       
       
       
