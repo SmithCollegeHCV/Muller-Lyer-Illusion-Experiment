@@ -26,14 +26,20 @@
             <div class="subtag" id='ml5_tag'>5</div>
             <div class="subtag" id='ml6_tag'>6</div>
         </div>
+<<<<<<< HEAD
     <div class="pic_overall_container">
     <div class = 'pic_container' id='ml1' style="visibility:visible;">
+=======
+
+    <p class="countdown"> You have <span id="countdowntimer">10 </span> seconds to answer.</p>
+    <div class = 'pic_container' id='ml1' style="display: none;">
+>>>>>>> origin/master
         <div id='sl1'> 
             <div id="infoi">
               <img id='img1' src="../image/ml-1.png"/>
             </div>
             <div id="slider">
-              <input type="range" name="points" min="0" max="100" class="myslider" value="0">
+              <input type="range" id='slider1' name="points" min="0" max="100" class="myslider" value="0">
             </div>
         </div>
     </div>
@@ -95,6 +101,7 @@
       
       
       
+<<<<<<< HEAD
 
     <div id='timer' class="timer">    
         <p class="countdown"> You have <span id="countdowntimer">10 </span> seconds to answer.</p> 
@@ -152,9 +159,58 @@
 
         </script>
    
+=======
+            
+    <script>
+        var containers=["ml1","ml2","ml3","ml4","ml5","ml6"];
+        function CountdownTimer(i){
+            console.log(containers[i]);
+            var timeleft = 10;
+            var Timer = setInterval(function(){
+            timeleft--;
+            document.getElementById("countdowntimer").textContent = timeleft;
+            if(timeleft <= 0)
+                clearInterval(Timer);
+            },1000)
+            if (i != 5){
+                document.getElementById(containers[i]).style.display="none";
+                document.getElementById(containers[i+1]).style.display="block";
+            } else {
+                document.getElementById(containers[i]).style.display="none";
+            }
+        }
+
+        function myFunction() {
+            var val = document.getElementById("slider1").value //gets the oninput value
+            console.log(val)
+        }
+
+    </script>
+>>>>>>> origin/master
 
     
+<<<<<<< HEAD
 
+=======
+    <script type="application/javascript">
+        function showupFunction(){
+            document.getElementById("enter").style.display = "none";
+            document.getElementById("ml1").style.display = "block";
+            (function loop(i){
+                setTimeout(function(){
+                    CountdownTimer(i);
+                    if (i++ <= 4){
+                        loop(i);
+                    }
+                }, 10000);
+            })(0);
+        }
+        function showupSecond(){
+            document.getElementById('ml1').style.display = 'none';
+            document.getElementById('ml2').style.display = 'block';
+        }
+    </script>
+>>>>>>> origin/master
       
       
       
