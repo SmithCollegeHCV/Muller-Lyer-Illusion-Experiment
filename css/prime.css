@@ -124,7 +124,7 @@ img{
 }
 
 .subtag{
-    background-color: beige;
+    background-color: #c8d6e7;
     width: 140px;
     height: 50px;
     border-top-right-radius: 20px;
@@ -133,7 +133,7 @@ img{
 }
 
 .pic_container{
-    background-color: beige;
+    background-color: #f0a3a3;
     width: 300px;
     height: 300px;
     float: left;
@@ -141,13 +141,40 @@ img{
 }
 
 .pic_overall_container{
-    background-color: azure;
+    background-color: #c8d6e7;
     width: 900px;
     height: 600px;
     margin: auto;
-    margin-top: 5px;
 }
 
 .timer{
     text-align: center;
+    width: 900px;
+    height:50px;
+    margin: auto;
+    background:#c8d6e7;
+    margin-top: 5px;
 }
+#progressBar {
+  display: block; /* default: inline-block */
+  width: 300px;
+  margin: auto;
+  padding: 4px;
+  border: 0 none;
+  background: #555555;
+  border-radius: 14px;
+
+}
+#progressBar::-moz-progress-bar {
+  border-radius: 12px;
+  background: #555555;
+  
+}
+/* webkit */
+#progressBar::-webkit-progress-bar {
+    background: #555555;
+}  
+#progressBar::-webkit-progress-value {  
+  border-radius: 12px;
+  background: #f0a3a3;
+} 
