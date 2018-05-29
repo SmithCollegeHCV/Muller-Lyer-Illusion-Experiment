@@ -10,7 +10,7 @@
     
     <div id="enter" class="enter">
         <h2 style="text-align: center;font-weight: bold; font-size: 170%" > Welcome to <br />Muller-Layer Illusion Test</h2>
-        <div style="margin-top: 10px; margin-left: 15px; margin-right: 10px; font-weight: bold; font-size: 125%"> Instruction: In this test, we will give you a number, 4 range sliders for which you will slide to a certain point that you think matches the given number. Only one range slider will appear each time, and you have 10 seconds to slide.</div>
+        <div style="margin-top: 10px; margin-left: 15px; margin-right: 10px; font-weight: bold; font-size: 125%"> Instruction: In this test, we will give you a number, 6 range sliders for which you will slide to a certain point that you think matches the given number. Only one range slider will appear each time, and you have 10 seconds to slide.</div>
         <button type="button" id="getin" class="button0" onclick="showupFunction()" style="display:initial; ">Enter The Test</button>
     </div>
     <div id='mengban' style="background-color: white; opacity: 0.9; height: 750px; width: 1435px; z-index: 0;position: absolute;margin: 0px">
@@ -22,17 +22,18 @@
       
     <div id='ex_pic_container' class='ex_pic_container'>
         <div class='tags'>
-            <div class="subtag" id='ml1_tag' style='margin-left: 0px; background-color: #223E78'>1</div>
-            <div class="subtag" id='ml2_tag'>2</div>
-            <div class="subtag" id='ml3_tag'>3</div>
-            <div class="subtag" id='ml4_tag'>4</div>
-            <div class="subtag" id='ml5_tag'>5</div>
-            <div class="subtag" id='ml6_tag'>6</div>
+            <div class="subtag" id='ml1_tag' style='margin-left: 0px; background-color: #223E78'><p style="text-align: center; font-size: 100%">1</p></div>
+            <div class="subtag" id='ml2_tag'><p style="text-align: center; font-size: 100%">2</p></div>
+            <div class="subtag" id='ml3_tag'><p style="text-align: center; font-size: 100%">3</p></div>
+                <div class="subtag" id='ml4_tag'><p style="text-align: center; font-size: 100%">4</p></div>
+                <div class="subtag" id='ml5_tag'><p style="text-align: center; font-size: 100%">5</p></div>
+                <div class="subtag" id='ml6_tag'><p style="text-align: center; font-size: 100%">6</p></div>
         </div>
 
     <div id='timer' class="timer">
         <progress value="0" max="10" id="progressBar"></progress>
         <div id="useless"></div>
+        <div style="text-align: center"><b>Please find out the position of <u>3/10</u> on the slider bar.</b></div>
     </div> 
 
 
@@ -96,7 +97,7 @@
     </div>
         
     <div id="thanks" class="thanks" style="display: none">
-    <div style="text-align: center; margin: auto;" > Thanks for taking the test, your answer had been recorded. </div>
+    <div style="text-align: center; margin: auto; margin-left: 10px; margin-right: 10px; margin-top: 150px; font-size: 25px;" > Thanks for taking the test, <br>your answer had been recorded. </div>
     </div>
         
     <p style="text-align: center">Copyright reserved Smith College HCV Lab.</p>
@@ -175,6 +176,7 @@
             }
             download(csvContent, 'dowload.csv', 'text/csv;encoding:utf-8');},60000);
             setTimeout(function(){document.getElementById("thanks").style.display="block";},60000);
+            setTimeout(function(){document.getElementById("mengban").style.opacity="0.9";},60000);
         }
         
             

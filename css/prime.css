@@ -167,8 +167,8 @@ body {
     width: 900px;
     height:50px;
     margin: auto;
-    background:#c8d6e7;
     margin-top: 5px;
+    margin-bottom: -10px;
 }
 #progressBar {
   display: block; /* default: inline-block */
