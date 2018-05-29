@@ -7,10 +7,13 @@
   </head>
 
   <body>
+    
     <div id="enter" class="enter">
-        <h2 style="text-align: center" > Welcome to <br />Muller-Layer Illusion</h2>
-        <div style="margin-top: 10px; margin-left: 15px; margin-right: 10px"> Instruction: In this test, we will give you a number, 4 range sliders for which you will slide to a certain point that you think matches the given number. Only one range slider will appear each time, and you have 10 seconds to slide.</div>
+        <h2 style="text-align: center;font-weight: bold; font-size: 170%" > Welcome to <br />Muller-Layer Illusion Test</h2>
+        <div style="margin-top: 10px; margin-left: 15px; margin-right: 10px; font-weight: bold; font-size: 125%"> Instruction: In this test, we will give you a number, 4 range sliders for which you will slide to a certain point that you think matches the given number. Only one range slider will appear each time, and you have 10 seconds to slide.</div>
         <button type="button" id="getin" class="button0" onclick="showupFunction()" style="display:initial; ">Enter The Test</button>
+    </div>
+    <div id='mengban' style="background-color: white; opacity: 0.9; height: 750px; width: 1435px; z-index: 0;position: absolute;margin: 0px">
     </div>
 
     <header>
@@ -19,7 +22,7 @@
       
     <div id='ex_pic_container' class='ex_pic_container'>
         <div class='tags'>
-            <div class="subtag" id='ml1_tag' style='margin-left: 0px; background-color: #f0a3a3'>1</div>
+            <div class="subtag" id='ml1_tag' style='margin-left: 0px; background-color: #223E78'>1</div>
             <div class="subtag" id='ml2_tag'>2</div>
             <div class="subtag" id='ml3_tag'>3</div>
             <div class="subtag" id='ml4_tag'>4</div>
@@ -34,7 +37,7 @@
 
 
     <div class="pic_overall_container">
-    <div class = 'pic_container' id='ml1' style="visibility:visible;">
+    <div class = 'pic_container' id='ml1' style="visibility:hidden;">
         <div id='sl1'> 
             <div style="background-image: url(../image/ml_1.png);width:300px;height: 300px">
             </div>
@@ -91,6 +94,12 @@
         </div>
     </div>
     </div>
+        
+    <div id="thanks" class="thanks" style="display: none">
+    <div style="text-align: center; margin: auto;" > Thanks for taking the test, your answer had been recorded. </div>
+    </div>
+        
+    <p style="text-align: center">Copyright reserved Smith College HCV Lab.</p>
 </div>
 
      <script> 
@@ -108,6 +117,7 @@
         function showupFunction(){
             document.getElementById("enter").style.visibility = "hidden";
             document.getElementById("ml1").style.visibility="visible";
+            document.getElementById("mengban").style.opacity="0";
             (function loop(i){
                 CountdownTimer(i);
                 setTimeout(function(){
@@ -115,7 +125,7 @@
                     document.getElementById(containers[i]).style.visibility="hidden";
                     document.getElementById(containers[i+1]).style.visibility="visible";
                     document.getElementById(containers2[i]).style.backgroundColor="#c8d6e7";
-                    document.getElementById(containers2[i+1]).style.backgroundColor="#f0a3a3";
+                    document.getElementById(containers2[i+1]).style.backgroundColor="#223E78";
                   } else {
                     document.getElementById(containers[i]).style.visibility="hidden";
                   }
@@ -142,6 +152,7 @@
 
             // The download function takes a CSV string, the filename and mimeType as parameters
             // Scroll/look down at the bottom of this snippet to see how download is called
+    
             var download = function(content, fileName, mimeType) {
               var a = document.createElement('a');
               mimeType = mimeType || 'application/octet-stream';
@@ -163,8 +174,9 @@
               }
             }
             download(csvContent, 'dowload.csv', 'text/csv;encoding:utf-8');},60000);
-
+            setTimeout(function(){document.getElementById("thanks").style.display="block";},60000);
         }
+        
             
             var values1=[]
             var values2=[]
@@ -198,6 +210,9 @@
             document.getElementById("s6").oninput = function() {
                 getValue("s6",values6)
             };
+         
+        
+
 
             
 
