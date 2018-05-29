@@ -1,0 +1,102 @@
+<div id="consent">
+
+<p class = "center">
+<img src = "../logo-small.png" width = "150px"/>
+</p>
+
+<h2>Theoretical Models of Human-Machine Interaction</h2>
+
+<p>
+This HIT is an experiment to study how people use interactive visualizations to analyze streaming data. It should take about 15 minutes to complete.
+</p>
+
+<p>
+<strong>You may only complete this HIT once.</strong> Subsequent completions (e.g. participating in the experiment more than once) will not be accepted. To see if you are eligible to participate in this experiment, please enter your Amazon Worker ID:
+
+<div style = "text-align:center;">
+<input type="text" id="workerId" name="workerId" disabled="true" size="30" />
+<button id="checkId" type="button">Check ID</button>
+</div>
+<br>
+
+<span id="invalidMessage">
+Our records show that you have taken part in this study before, so we cannot allow you to take this HIT again at this time. Please contact us if you feel this is in error.
+</span>
+
+<span id="validMessage">
+Congratulations! Our records show that you are eligible to participate in this study.
+</span>
+
+</p>
+
+<div id="consentForm">
+<p>You are being asked to be in a research study on interactive data analysis because you have selected
+this HIT on Amazon Mechanical Turk. The purpose of the study is to investigate how people analyze
+changing data using an interactive visualization. The results of this study will help improve
+visualizations in the future. Please read the following before agreeing to be in the study. If you agree
+to be in this study, you be shown a visualization of streaming data and be asked to monitor each data
+stream for different kinds of patterns. When you observe a pattern, you will indicate the type of
+pattern by pressing the corresponding key on your keyboard. Respond to each pattern as quickly and
+accurately as possible. After you are done with the main study, you will be asked to complete a brief
+questionnaire. Participation in this study should take about <strong>15 minutes</strong>.</p>
+
+<p>There are no known risks or direct benefits to you for completing this study. You will receive $1 for
+participating in this study. In addition, for each correct response you will receive $0.10, and you will
+receive a bonus of $0.25 for correctly identifying all the patterns. Your responses will be strictly
+anonymous. They may be used in research papers and academic presentations.
+The decision to participate in this study is entirely up to you. You may refuse to take part in the study
+at any time without affecting your relationship with the investigators of this study or Smith College.
+Your decision will not result in any loss of benefits to which you are otherwise entitled. You have the
+right not to answer any single question, as well as to withdraw completely from the interview at any
+point during the process; additionally, you have the right to request that the interviewer not use any
+of your interview material.</p>
+
+<p>You have the right to ask questions about this research study and to have those questions answered
+by me before, during or after the research. If you have any further questions about the study, at any
+time feel free to contact me, R. Jordan Crouser, (413) 585-4036, jcrouser@smith.edu. If you like, a
+summary of the results of the study will be sent to you. If you have any other concerns about your
+rights as a research participant that have not been answered, or if you have any problems or concerns
+that occur as a result of your participation, you may Phil Peake, Co-chair of the Smith College
+Institutional Review Board at (413) 585-3914. Alternatively, concerns can be reported by completing a
+Participant Complaint Form, which can found on the IRB website
+at:</p>
+
+<p class="center"><a href = "http://www.smith.edu/irb/compliance.htm">www.smith.edu/irb/compliance.htm</a></p>
+
+<p>If you would like to keep a copy of this document for your records, please print or save this page
+now. You may also contact the researcher to request a copy.
+By clicking below to be taken to the survey, you indicate that you have read and understood the
+above and volunteer to participate in this study.</p>
+</div>
+
+<p class="center">
+<button id="consentYes" disabled="true" type="button">I have read and understood the above</button>
+</p>
+
+<p class="center">
+<strong>Note: this HIT requires a modern browser. If you are not using Chrome or Firefox, <br/> 
+the "I have read and understood the above" button may not activate <br/>
+even after entering your Worker ID.</strong>
+</p>
+
+</div>
+
+<style>
+  #invalidMessage {
+    display: none;
+    color: red;
+  }
+  #validMessage {
+    display: none;
+    color: green;
+  }
+  #consentForm {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 200px;
+    overflow-y: scroll;
+    padding: 15px;
+  }
+</style>
+
+<script src="modules/consent/index.js"></script>

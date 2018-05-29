@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
+
+* {
+  color: #333;
+  font-family: "PT Sans", sans-serif;
+}
+
+
+#experimentr {
+  width: 80%;
+}
+
+#control {
+  margin-top: 1em;
+}
+
+#next-button {
+  float: right;
+}
+
+.placeholder {
+  color: steelblue;
+  font-weight: bold;
+}
+
+p.center {
+	text-align: center;
+}
+
+
+#consent, #nasa, #demographics, #debrief{
+	margin:auto;
+	padding-left: 20%;
+}
