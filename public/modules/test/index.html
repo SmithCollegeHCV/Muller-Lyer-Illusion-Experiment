@@ -7,7 +7,7 @@
   </head>
 
   <body>
-    
+    <!--
     <div id="enter" class="enter">
         <h2 style="text-align: center;font-weight: bold; font-size: 170%" > Welcome to <br />Muller-Layer Illusion Test</h2>
         <div style="margin-top: 10px; margin-left: 15px; margin-right: 10px; font-weight: bold; font-size: 125%"> Instruction: In this test, we will give you a number, 6 range sliders for which you will slide to a certain point that you think matches the given number. Only one range slider will appear each time, and you have 10 seconds to slide.</div>
@@ -15,14 +15,11 @@
     </div>
     <div id='mengban' style="background-color: white; opacity: 0.9; height: 750px; width: 1435px; z-index: 0;position: absolute;margin: 0px">
     </div>
-
-    <header>
-      <h1 style="text-align:center;">Muller-Layer Illusion Experiment</h1>
-    </header> 
+    -->
       
-    <div id='ex_pic_container' class='ex_pic_container'>
+    <div id='ex_pic_container' class='ex_pic_container' style="margin-top: 50px;">
         <div class='tags'>
-            <div class="subtag" id='ml1_tag' style='margin-left: 0px; background-color: #223E78'><p style="text-align: center; font-size: 100%">1</p></div>
+            <div class="subtag" id='ml1_tag' style='margin-left: 0px; background-color: grey'><p style="text-align: center; font-size: 100%">1</p></div>
             <div class="subtag" id='ml2_tag'><p style="text-align: center; font-size: 100%">2</p></div>
             <div class="subtag" id='ml3_tag'><p style="text-align: center; font-size: 100%">3</p></div>
                 <div class="subtag" id='ml4_tag'><p style="text-align: center; font-size: 100%">4</p></div>
@@ -33,12 +30,12 @@
     <div id='timer' class="timer">
         <progress value="0" max="10" id="progressBar"></progress>
         <div id="useless"></div>
-        <div style="text-align: center"><b>Please find out the position of <u>3/10</u> on the slider bar.</b></div>
+        <div style="text-align: center"><h2>Please find out the position of <u style="color: blue">3/10</u> on the slider bar.</b></div>
     </div> 
 
 
     <div class="pic_overall_container">
-    <div class = 'pic_container' id='ml1' style="visibility:hidden;">
+    <div class = 'pic_container' id='ml1' style="visibility:visible;">
         <div id='sl1'> 
             <div style="background-image: url(image/ml_1.png);width:300px;height: 300px">
             </div>
@@ -95,17 +92,18 @@
         </div>
     </div>
     </div>
-        
+
+    <!--    
     <div id="thanks" class="thanks" style="display: none">
     <div style="text-align: center; margin: auto; margin-left: 10px; margin-right: 10px; margin-top: 150px; font-size: 25px;" > Thanks for taking the test, <br>your answer had been recorded. </div>
     </div>
-        
-    <p style="text-align: center">Copyright reserved Smith College HCV Lab.</p>
+    -->
 </div>
 
      <script> 
         var containers=["ml1","ml2","ml3","ml4","ml5","ml6"];
         var containers2=['ml1_tag','ml2_tag','ml3_tag','ml4_tag','ml5_tag','ml6_tag']
+
         function CountdownTimer(i){
             var timeleft = 10;
             var Timer = setInterval(function(){
@@ -115,104 +113,72 @@
             },1000);
             
         }  
-        function showupFunction(){
-            document.getElementById("enter").style.visibility = "hidden";
-            document.getElementById("ml1").style.visibility="visible";
-            document.getElementById("mengban").style.opacity="0";
-            (function loop(i){
-                CountdownTimer(i);
-                setTimeout(function(){
-                  if (i <= 4){
-                    document.getElementById(containers[i]).style.visibility="hidden";
-                    document.getElementById(containers[i+1]).style.visibility="visible";
-                    document.getElementById(containers2[i]).style.backgroundColor="#c8d6e7";
-                    document.getElementById(containers2[i+1]).style.backgroundColor="#223E78";
-                  } else {
-                    document.getElementById(containers[i]).style.visibility="hidden";
-                  }
-                  if (i++ <= 4){
-                        loop(i);
-                  }
-                },10000);
-            })(0);
-
+        (function loop(i){
+            CountdownTimer(i);
             setTimeout(function(){
-            final.push([values1[0],values1[values1.length-1]])
-            final.push([values2[0],values2[values2.length-1]])
-            final.push([values3[0],values3[values3.length-1]])
-            final.push([values4[0],values4[values4.length-1]])
-            final.push([values5[0],values5[values5.length-1]])
-            final.push([values6[0],values6[values6.length-1]])
-            // Building the CSV from the Data two-dimensional array
-            // Each column is separated by ";" and new line "\n" for next row
-            var csvContent = '';
-            final.forEach(function(infoArray, index) {
-              dataString = infoArray.join(';');
-              csvContent += index < final.length ? dataString + '\n' : dataString;
-            });
-
-            // The download function takes a CSV string, the filename and mimeType as parameters
-            // Scroll/look down at the bottom of this snippet to see how download is called
-    
-            var download = function(content, fileName, mimeType) {
-              var a = document.createElement('a');
-              mimeType = mimeType || 'application/octet-stream';
-
-              if (navigator.msSaveBlob) { // IE10
-                navigator.msSaveBlob(new Blob([content], {
-                  type: mimeType
-                }), fileName);
-              } else if (URL && 'download' in a) { //html5 A[download]
-                a.href = URL.createObjectURL(new Blob([content], {
-                  type: mimeType
-                }));
-                a.setAttribute('download', fileName);
-                document.body.appendChild(a);
-                a.click();
-                document.body.removeChild(a);
+              if (i <= 4){
+                document.getElementById(containers[i]).style.visibility="hidden";
+                document.getElementById(containers[i+1]).style.visibility="visible";
+                document.getElementById(containers[i+1]).style.borderColor="dimgrey";
+                document.getElementById(containers2[i]).style.backgroundColor="#d7d7d7";
+                document.getElementById(containers2[i+1]).style.backgroundColor="grey";
               } else {
-                location.href = 'data:application/octet-stream,' + encodeURIComponent(content); // only this mime type is supported
+                document.getElementById(containers[i]).style.visibility="hidden";
               }
-            }
-            download(csvContent, 'dowload.csv', 'text/csv;encoding:utf-8');},60000);
-            setTimeout(function(){document.getElementById("thanks").style.display="block";},60000);
-            setTimeout(function(){document.getElementById("mengban").style.opacity="0.9";},60000);
-        }
+              if (i++ <= 4){
+                    loop(i);
+              }
+            },10000);
+        })(0);
+
+        setTimeout(function(){
+        final.push([values1[0],values1[values1.length-1]])
+        final.push([values2[0],values2[values2.length-1]])
+        final.push([values3[0],values3[values3.length-1]])
+        final.push([values4[0],values4[values4.length-1]])
+        final.push([values5[0],values5[values5.length-1]])
+        final.push([values6[0],values6[values6.length-1]])
+        // Building the CSV from the Data two-dimensional array
+        // Each column is separated by ";" and new line "\n" for next row
+        var csvContent = '';
+        final.forEach(function(infoArray, index) {
+          dataString = infoArray.join(';');
+          csvContent += index < final.length ? dataString + '\n' : dataString;
+        });},60000);
         
-            
-            var values1=[]
-            var values2=[]
-            var values3=[]
-            var values4=[]
-            var values5=[]
-            var values6=[]
-            var final=[]
+        var values1=[]
+        var values2=[]
+        var values3=[]
+        var values4=[]
+        var values5=[]
+        var values6=[]
+        var final=[]
 
-            function getValue(idname,arrayname) {
-                var val = document.getElementById(idname).value
-                arrayname.push(idname)
-                arrayname.push(val)
-            }
+        function getValue(idname,arrayname) {
+            var val = document.getElementById(idname).value
+            arrayname.push(idname)
+            arrayname.push(val)
+        }
 
-            document.getElementById("s1").oninput = function() {
-                getValue("s1",values1)
-            };
-            document.getElementById("s2").oninput = function() {
-                getValue("s2",values2)
-            };
-            document.getElementById("s3").oninput = function() {
-                getValue("s3",values3)
-            };
-            document.getElementById("s4").oninput = function() {
-                getValue("s4",values4)
-            };
-            document.getElementById("s5").oninput = function() {
-                getValue("s5",values5)
-            };
-            document.getElementById("s6").oninput = function() {
-                getValue("s6",values6)
-            };
-         
+        document.getElementById("s1").oninput = function() {
+            getValue("s1",values1)
+        };
+        document.getElementById("s2").oninput = function() {
+            getValue("s2",values2)
+        };
+        document.getElementById("s3").oninput = function() {
+            getValue("s3",values3)
+        };
+        document.getElementById("s4").oninput = function() {
+            getValue("s4",values4)
+        };
+        document.getElementById("s5").oninput = function() {
+            getValue("s5",values5)
+        };
+        document.getElementById("s6").oninput = function() {
+            getValue("s6",values6)
+        };
+     
         
 
 

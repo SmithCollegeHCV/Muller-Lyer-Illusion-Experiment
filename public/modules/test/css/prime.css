@@ -1,5 +1,5 @@
 body {
-    background-color: azure;
+    background-color: white;
 }
 
 #sl1{
@@ -83,7 +83,7 @@ body {
     background: #000000;
     opacity: 1;
 }
-
+/*
 .enter{
     background-image: url(../image/bg.png);
 
@@ -113,6 +113,7 @@ body {
     display:block; 
     border-radius: 15px;
 }
+
 .button0 {
                 background-color: white;
                 border-radius: 15px;
@@ -130,17 +131,19 @@ body {
                 background-color: #223E78;
                 color: aliceblue;
             }
-            
+ */           
 .tags{
     
-    width: 900px;
+    width: 1000px;
     height: 50px;
     margin: auto;
 }
 
 .subtag{
-    background-color: #c8d6e7;
-    width: 140px;
+    background-color: #FFFFFF;
+    border-color: dimgrey;
+    border-style:solid;
+    width: 152px;
     height: 50px;
     border-top-right-radius: 20px;
     float: left;
@@ -148,18 +151,22 @@ body {
 }
 
 .pic_container{
-    background-color: #FFFBC7;
     width: 300px;
     height: 300px;
+    border-color:dimgrey;
+    border-style:solid;
+    border-width: 2px;
     float: left;
     margin: auto;
+    border-radius:10px;
 }
 
 .pic_overall_container{
-    background-color: #c8d6e7;
-    width: 900px;
+    background-color: #FFFFFF;
+    width: 1000px;
     height: 600px;
     margin: auto;
+    margin-top: 50px;
 }
 
 .timer{
@@ -167,29 +174,30 @@ body {
     width: 900px;
     height:50px;
     margin: auto;
-    margin-top: 5px;
+    margin-top: 30px;
     margin-bottom: -10px;
 }
+
 #progressBar {
   display: block; /* default: inline-block */
   width: 300px;
   margin: auto;
   padding: 4px;
   border: 0 none;
-  background: #223E78;
+  background: grey;
   border-radius: 14px;
 
 }
 #progressBar::-moz-progress-bar {
   border-radius: 12px;
-  background: #223E78;
+  background: red;
   
 }
 /* webkit */
 #progressBar::-webkit-progress-bar {
-    background: #223E78;
+    background: grey;
 }  
 #progressBar::-webkit-progress-value {  
   border-radius: 12px;
-  background: #FFFBC7;
+  background: white;
 } 
