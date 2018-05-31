@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Muller-Lyer Illusion</title>
+    <link href ="modules/test/css/prime.css" rel="stylesheet">
+
     <link href ="css/prime.css" rel="stylesheet">
     <style>
     body {
@@ -102,13 +104,7 @@
     </div>
     </div>
 
-    <!--    
-    <div id="thanks" class="thanks" style="display: none">
-    <div style="text-align: center; margin: auto; margin-left: 10px; margin-right: 10px; margin-top: 150px; font-size: 25px;" > Thanks for taking the test, <br>your answer had been recorded. </div>
-    </div>
-    -->
 </div>
-
      <script> 
         var containers=["ml1","ml2","ml3","ml4","ml5","ml6"];
         var containers2=['ml1_tag','ml2_tag','ml3_tag','ml4_tag','ml5_tag','ml6_tag']
@@ -187,10 +183,14 @@
         document.getElementById("s6").oninput = function() {
             getValue("s6",values6)
         };
-     
+         
+         experimentr.hideNext();
+         //experimentr.showNext();
+         setTimeout(experimentr.showNext(),60000) ;
         
-
-
+         //experimentr.release();
+        setTimeout(experimentr.release(),60000) ;
+            
             
 
         </script>
