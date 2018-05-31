@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Muller-Lyer Illusion</title>
-    <link href ="css/prime.css" rel="stylesheet">
+    <link href ="modules/test/css/prime.css" rel="stylesheet">
   </head>
 
   <body>
@@ -37,7 +37,7 @@
     <div class="pic_overall_container">
     <div class = 'pic_container' id='ml1' style="visibility:visible;">
         <div id='sl1'> 
-            <div style="background-image: url(image/ml_1.png);width:300px;height: 300px">
+            <div style="background-image: url(modules/test/image/ml_1.png);width:300px;height: 300px">
             </div>
             <div id="slider">
               <input type="range" id='s1' name="points" min="0" max="100" class="myslider" value="0">
@@ -47,7 +47,7 @@
 
     <div class = 'pic_container' id='ml2' style="visibility:hidden;"> 
         <div id='sl2'> 
-            <div style="background-image: url(image/ml_2.png);width:300px;height: 300px">
+            <div style="background-image: url(modules/test/image/ml_2.png);width:300px;height: 300px">
             </div>
             <div id="slider2">
               <input type="range" id='s2' name="points" min="0" max="100" class="myslider" value="0">
@@ -57,7 +57,7 @@
 
     <div class = 'pic_container' id='ml3' style="visibility:hidden;"> 
         <div id='sl3'> 
-            <div style="background-image: url(image/ml_3.png);width:300px;height: 300px">
+            <div style="background-image: url(modules/test/image/ml_3.png);width:300px;height: 300px">
             </div>
             <div id="slider3" >
               <input type="range" id='s3' name="points" min="0" max="100" class="myslider" value="0">
@@ -66,7 +66,7 @@
     </div>
     <div class = 'pic_container' id='ml4' style="visibility:hidden;"> 
         <div id='sl4'> 
-            <div style="background-image: url(image/ml_4.png);width:300px;height: 300px">
+            <div style="background-image: url(modules/test/image/ml_4.png);width:300px;height: 300px">
             </div>
             <div id="slider4">
               <input type="range" id='s4' name="points" min="0" max="100" class="myslider" value="0">
@@ -75,7 +75,7 @@
     </div>
     <div class = 'pic_container' id='ml5' style="visibility:hidden;"> 
         <div id='sl5'> 
-            <div style="background-image: url(image/ml_5.png);width:300px;height: 300px">
+            <div style="background-image: url(modules/test/image/ml_5.png);width:300px;height: 300px">
             </div>
             <div id="slider5">
               <input type="range" id='s5' name="points" min="0" max="100" class="myslider" value="0">
@@ -84,7 +84,7 @@
     </div>
     <div class = 'pic_container' id='ml6' style="visibility:hidden;"> 
         <div id='sl6'> 
-            <div style="background-image: url(image/ml_6.png);width:300px;height: 300px">
+            <div style="background-image: url(modules/test/image/ml_6.png);width:300px;height: 300px">
             </div>
             <div id="slider6">
               <input type="range" id='s6' name="points" min="0" max="100" class="myslider" value="0">
@@ -93,13 +93,7 @@
     </div>
     </div>
 
-    <!--    
-    <div id="thanks" class="thanks" style="display: none">
-    <div style="text-align: center; margin: auto; margin-left: 10px; margin-right: 10px; margin-top: 150px; font-size: 25px;" > Thanks for taking the test, <br>your answer had been recorded. </div>
-    </div>
-    -->
 </div>
-
      <script> 
         var containers=["ml1","ml2","ml3","ml4","ml5","ml6"];
         var containers2=['ml1_tag','ml2_tag','ml3_tag','ml4_tag','ml5_tag','ml6_tag']
@@ -178,9 +172,6 @@
         document.getElementById("s6").oninput = function() {
             getValue("s6",values6)
         };
-     
-        
-
 
             
 

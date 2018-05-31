@@ -1,0 +1,143 @@
+svg {
+  font: 10px sans-serif;
+}
+
+#tutorial{
+	margin: auto;
+	padding-left: 15%;
+}
+
+.axis text { display: none; }
+
+.line1{
+	fill: none;
+	stroke: black;
+	stroke-width: 2px;
+}
+.line2{
+	fill: none;
+	stroke: brown;
+	stroke-width: 2px;
+	
+}
+.line3{
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 2px;
+	
+}
+.lineClick1{
+	fill: none;
+	stroke: black;
+	stroke-width: 2px;
+}
+#lineCopy1{
+	fill: none;
+	stroke: black;
+	stroke-width: 2px;
+}
+.lineClick2{
+	fill: none;
+	stroke: brown;
+	stroke-width: 2px;
+	opacity: 0.5;
+}
+#lineCopy2{
+	fill: none;
+	stroke: brown;
+	stroke-width: 2px;
+}
+.lineClick3{
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 2px;
+	opacity: 0.5;
+}
+#lineCopy3{
+	fill: none;
+	stroke: steelblue;
+	stroke-width: 2px;
+}
+.axis path,
+.axis line{
+	fill:none;
+	stroke:black;
+	shape-rendering: crispEdges;
+}
+
+p{
+	font-family: verdana;
+	font-size: 20px;
+	text-align:center;
+}
+
+.content{
+	width:800;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
+}
+
+.submitButton{
+  position: absolute;
+  top: 750px;
+  left: 1050px;
+  height: 35px;
+  width: 75px;
+  background-color: #4CAF50;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  outline:none;
+}
+.submitButton:hover{
+  background-color: #3e8e41;
+}
+.submitButton:active{
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+
+
+.line{
+	fill: none;
+	stroke: black;
+	stroke-width: 2px;
+}
+svg:not(:root) {
+    overflow: scroll;
+}
+svg text{
+	text-anchor:middle;
+	font-family: verdana;
+	fill: black;
+	font-size:20px;
+	clear:both;
+	padding: 10px;
+}
+
+.catagoryButtons{
+  position: relative;
+  height: 35px;
+  margin: 10px;
+  background-color: #4CAF50;
+  border-radius: 8px;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  outline:none;
+  float:left;
+}
+
+div#catagoryButtonContainer{
+    position: absolute;
+    left: 57%;
+}
