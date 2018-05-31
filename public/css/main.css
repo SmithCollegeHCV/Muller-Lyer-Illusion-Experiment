@@ -12,10 +12,12 @@
 
 #control {
   margin-top: 1em;
+    font-size: 20px;
 }
 
 #next-button {
   float: right;
+    font-size: 20px;
 }
 
 .placeholder {
@@ -32,3 +34,4 @@ p.center {
 	margin:auto;
 	padding-left: 20%;
 }
+
