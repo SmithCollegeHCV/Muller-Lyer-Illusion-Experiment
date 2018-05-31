@@ -3,9 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Muller-Lyer Illusion</title>
-<<<<<<< HEAD
     <link href ="modules/test/css/prime.css" rel="stylesheet">
-=======
+
     <link href ="css/prime.css" rel="stylesheet">
     <style>
     body {
@@ -16,7 +15,6 @@
         transform-origin: 0 0;
     }
       </style>
->>>>>>> 64e337bb80c8a75141a746177a94a322126edef1
   </head>
 
   <body style="margin-left: 230px;">
@@ -185,7 +183,14 @@
         document.getElementById("s6").oninput = function() {
             getValue("s6",values6)
         };
-
+         
+         experimentr.hideNext();
+         //experimentr.showNext();
+         setTimeout(function(){experimentr.showNext()},60000) ;
+        
+         //experimentr.release();
+        setTimeout(function(){experimentr.release()},60000) ;
+            
             
 
         </script>
