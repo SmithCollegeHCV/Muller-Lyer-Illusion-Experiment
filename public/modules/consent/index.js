@@ -25,8 +25,8 @@
   function validate() {
     if( data.workerId ) {
       data.pageId = "consent";
-      experimentr.merge(data);
-      experimentr.addData();
+      experimentr.addData(data);
+      //experimentr.addData();
       experimentr.release();
       
       if( workers.indexOf(data.workerId) == -1 ) {

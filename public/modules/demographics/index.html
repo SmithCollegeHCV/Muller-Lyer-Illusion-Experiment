@@ -73,7 +73,7 @@ Thank you! The experiment is almost complete. Please fill out the following demo
   
   function validate() {
 	  if(data.age != null && data.sex  != null && data.degree  != null && data.monitor != null ) {
-	    experimentr.merge(data);
+	    experimentr.addData(data);
       experimentr.endTimer('demographics');
 	    experimentr.release();
 	  }
