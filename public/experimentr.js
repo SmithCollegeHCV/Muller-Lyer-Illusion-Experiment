@@ -113,21 +113,8 @@ experimentr.stopMouseMovementRec = function(event){
 
   // Adds the data in `d` to the experiment data, and saves to server.
   experimentr.addData = function(d) {
-    savePostId= experimentr.postId();
-    startTime = data.time_start_experiment
-    console.log("post id in addData"+ savePostId)
-    if (typeof(d) != "undefined"){
-      console.log("in if");
-      console.log(experimentr.postId);
-      experimentr.merge(d);
-      console.log(data);
-    }
-
+    merge(data, d);
     experimentr.save();
-    console.log(" about to save" + data )
-    data ={};
-    data.postId=savePostId;
-    data.time_start_experiment = startTime
   }
 
   experimentr.setPageType = function(pageType){
@@ -144,17 +131,8 @@ experimentr.stopMouseMovementRec = function(event){
   }
 
   // Merges object o2 into o1.
-  experimentr.merge = function (o2) {
-    savePostId = experimentr.postId();
-    console.log(savePostId);
-
-    for (var attr in o2) {
-    console.log("merge data"+ data)
-    data[attr] = o2[attr];
-    console.log("merge data"+ data) }
-
-    data.postId = savePostId
-
+  function merge(o1, o2) {
+    for (var attr in o2) { o1[attr] = o2[attr]; }
   }
 
   function concatenate(o1, o2){
@@ -240,14 +218,7 @@ experimentr.stopMouseMovementRec = function(event){
     console.log('ending timer: '+x);
     data['time_end_'+x] = Date.now();
     data['time_diff_'+x] = parseFloat(data['time_end_'+x]) - parseFloat(data['time_start_'+x]);
-
-    if (x == 'experiment'){
-      console.log('x equals experiment');
-      data.pageId = "totalExperimentTime";
-    }
-
-    console.log("in end timer", data)
-    experimentr.addData();
+    experimentr.save();
   }
 
   // attachTimer lets you show participants a visual countdown before advancing the experiment.
