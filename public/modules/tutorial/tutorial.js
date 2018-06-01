@@ -1014,7 +1014,7 @@ function introduction(i) {
 				.attr("y", 410);
 
 			svg.append("text")
-				.text("5/10 means find 5 on the slider whose range is 10.")
+				.text("5/10 means find 5 on the slider whose values range from 1 to 10.")
 				.attr("style", "font-size:15px")
 				.attr("x", 360)
 				.attr("y", 440);
@@ -1031,7 +1031,7 @@ function introduction(i) {
 				.attr("y", 0);
 
 			svg.append("text")
-				.text("You can use your mouse to drage the slider.")
+				.text("You can use your mouse to drag the slider.")
 				.attr("x", 360)
 				.attr("y", 410);
 
