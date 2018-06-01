@@ -10,7 +10,7 @@ var express   = require('express')
 , fs          = require('fs')
 , d3          = require('d3')
 , redisClient
-, port        = process.argv[2] || 8000
+, port        = process.argv[2] || 4000
 , rport       = process.argv[3] || 6379
 , debug       = process.argv[4] || null
 , socketPort  = process.argv[5] || 80
