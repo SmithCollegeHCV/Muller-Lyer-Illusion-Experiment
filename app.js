@@ -3,6 +3,7 @@
 
 // Example run command: `node app.js 9000 6380 true`; listen on port 9000, connect to redis on 6380, debug printing on.
 
+<<<<<<< HEAD
 var express     = require('express')
   , http        = require('http')
   , redis       = require('redis')
@@ -10,6 +11,21 @@ var express     = require('express')
   , port        = process.argv[2] || 8000
   , rport       = process.argv[3] || 6379
   , debug       = process.argv[4] || null
+=======
+
+var express   = require('express')
+, http        = require('http')
+, redis       = require('redis')
+, io          = require('socket.io')
+, fs          = require('fs')
+, d3          = require('d3')
+, redisClient
+, port        = process.argv[2] || 4000
+, rport       = process.argv[3] || 6379
+, debug       = process.argv[4] || null
+, socketPort  = process.argv[5] || 80
+
+>>>>>>> 324d744aa135879260a3cdd12a43afb57cedab47
 
 // Database setup
 redisClient = redis.createClient(rport)

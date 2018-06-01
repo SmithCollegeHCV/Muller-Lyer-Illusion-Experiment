@@ -108,6 +108,94 @@
 </div>
     <!--
      <script> 
+<<<<<<< HEAD
+        var containers=["ml1","ml2","ml3","ml4","ml5","ml6"];
+        var containers2=['ml1_tag','ml2_tag','ml3_tag','ml4_tag','ml5_tag','ml6_tag']
+
+        function CountdownTimer(i){
+            var timeleft = 10;
+            var Timer = setInterval(function(){
+              document.getElementById("progressBar").value = 10 - --timeleft;
+              if(timeleft <= 0)
+                clearInterval(Timer);
+            },1000);
+            
+        }  
+        (function loop(i){
+            CountdownTimer(i);
+            setTimeout(function(){
+              if (i <= 4){
+                document.getElementById(containers[i]).style.visibility="hidden";
+                document.getElementById(containers[i+1]).style.visibility="visible";
+                document.getElementById(containers[i+1]).style.borderColor="dimgrey";
+                document.getElementById(containers2[i]).style.backgroundColor="#d7d7d7";
+                document.getElementById(containers2[i+1]).style.backgroundColor="grey";
+              } else {
+                document.getElementById(containers[i]).style.visibility="hidden";
+              }
+              if (i++ <= 4){
+                    loop(i);
+              }
+            },10000);
+        })(0);
+
+        setTimeout(function(){
+        final.push([values1[0],values1[values1.length-1]])
+        final.push([values2[0],values2[values2.length-1]])
+        final.push([values3[0],values3[values3.length-1]])
+        final.push([values4[0],values4[values4.length-1]])
+        final.push([values5[0],values5[values5.length-1]])
+        final.push([values6[0],values6[values6.length-1]])
+        // Building the CSV from the Data two-dimensional array
+        // Each column is separated by ";" and new line "\n" for next row
+        var csvContent = '';
+        final.forEach(function(infoArray, index) {
+          dataString = infoArray.join(';');
+          csvContent += index < final.length ? dataString + '\n' : dataString;
+        });},60000);
+        
+        var values1=[]
+        var values2=[]
+        var values3=[]
+        var values4=[]
+        var values5=[]
+        var values6=[]
+        var final=[]
+
+        function getValue(idname,arrayname) {
+            var val = document.getElementById(idname).value
+            arrayname.push(idname)
+            arrayname.push(val)
+        }
+
+        document.getElementById("s1").oninput = function() {
+            getValue("s1",values1)
+        };
+        document.getElementById("s2").oninput = function() {
+            getValue("s2",values2)
+        };
+        document.getElementById("s3").oninput = function() {
+            getValue("s3",values3)
+        };
+        document.getElementById("s4").oninput = function() {
+            getValue("s4",values4)
+        };
+        document.getElementById("s5").oninput = function() {
+            getValue("s5",values5)
+        };
+        document.getElementById("s6").oninput = function() {
+            getValue("s6",values6)
+        };
+         
+         experimentr.hideNext();
+         //experimentr.showNext();
+         setTimeout(function(){experimentr.showNext()},60000) ;
+        
+         //experimentr.release();
+        setTimeout(function(){experimentr.release()},60000) ;
+              
+    </script>
+=======
 
             
             
@@ -191,7 +279,6 @@
         </script>
 
    
-
 
 
       

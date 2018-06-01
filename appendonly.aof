@@ -940,85 +940,159 @@ $6
 SELECT
 $1
 0
+<<<<<<< HEAD
+=======
 *1
 $8
 flushall
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwblk2g
+$7
+consent
+$121
+{"postId":"jhwblk2g","time_start_experiment":1527878816754,"workerId":"ddd","pageId":"consent","timestamp":1527878819021}
+=======
 jhwb6qja
 $7
 content
 $125
 {"postId":"jhwb6qja","time_start_experiment":1527878125314,"workerId":"zhenyao","pageId":"consent","timestamp":1527878130251}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwblk2g
+$9
+undefined
+$137
+{"postId":"jhwblk2g","time_start_experiment":1527878816754,"time_end_demo":1527878822636,"time_diff_demo":null,"timestamp":1527878822643}
+=======
 jhwb6qja
 $7
 content
 $137
 {"postId":"jhwb6qja","time_start_experiment":1527878125314,"time_end_demo":1527878133232,"time_diff_demo":null,"timestamp":1527878133240}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwblk2g
+$9
+undefined
+$137
+{"postId":"jhwblk2g","time_start_experiment":1527878816754,"time_end_demo":1527878822853,"time_diff_demo":null,"timestamp":1527878822860}
+=======
 jhwb6qja
 $7
 content
 $137
 {"postId":"jhwb6qja","time_start_experiment":1527878125314,"time_end_demo":1527878133384,"time_diff_demo":null,"timestamp":1527878133391}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwblk2g
+$9
+undefined
+$137
+{"postId":"jhwblk2g","time_start_experiment":1527878816754,"time_end_demo":1527878823187,"time_diff_demo":null,"timestamp":1527878823191}
+=======
 jhwb6qja
 $7
 content
 $246
 {"postId":"jhwb6qja","time_start_experiment":1527878125314,"time_start_test":1527878134382,"pageID":"test","s1":"32","s2":"30","s3":"28","s4":"26","s5":"24","s6":"25","time_end_test":1527878187835,"time_diff_test":53453,"timestamp":1527878187843}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwblk2g
+$9
+undefined
+$137
+{"postId":"jhwblk2g","time_start_experiment":1527878816754,"time_end_demo":1527879047820,"time_diff_demo":null,"timestamp":1527879047840}
+=======
 jhwb6qja
 $7
 content
 $360
 {"postId":"jhwb6qja","time_start_experiment":1527878125314,"time_start_nasatlx":1527878189329,"pageId":"nasatlx","mental_demand":"0.6","physical_demand":"0.4","temporal_demand":"0.6","performance":"0.4","effort":"0.4","frustration":"0.4","nasatlx_score":"00.60.40.60.40.40.4","time_end_nasatlx":1527878198286,"time_diff_nasatlx":8957,"timestamp":1527878198295}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwblk2g
+$9
+undefined
+$137
+{"postId":"jhwblk2g","time_start_experiment":1527878816754,"time_end_demo":1527879721798,"time_diff_demo":null,"timestamp":1527879721945}
+=======
 jhwb6qja
 $7
 content
 $282
 {"postId":"jhwb6qja","time_start_experiment":1527878125314,"time_start_demographics":1527878199314,"pageId":"demographics","age":"18-25","sex":"Female","degree":"Bachelors","monitor":"11","time_end_demographics":1527878203509,"time_diff_demographics":4195,"timestamp":1527878203513}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwc6cye
+$7
+consent
+$122
+{"postId":"jhwc6cye","time_start_experiment":1527879787359,"workerId":"llll","pageId":"consent","timestamp":1527879794358}
+=======
 jhwb6qja
 $7
 content
 $181
 {"postId":"jhwb6qja","time_start_experiment":1527878125314,"time_end_experiment":1527878204612,"time_diff_experiment":79298,"pageId":"totalExperimentTime","timestamp":1527878204622}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwc6cye
+$9
+undefined
+$137
+{"postId":"jhwc6cye","time_start_experiment":1527879787359,"time_end_demo":1527879797444,"time_diff_demo":null,"timestamp":1527879797450}
+=======
 jhwb6qja
 $7
 content
 $128
 {"postId":"jhwb6qja","time_start_experiment":1527878125314,"pageId":"debrief","comments":"jhwb6qja\n","timestamp":1527878216118}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwc6cye
+$9
+undefined
+$137
+{"postId":"jhwc6cye","time_start_experiment":1527879787359,"time_end_demo":1527879797569,"time_diff_demo":null,"timestamp":1527879797576}
+=======
 jhwbersd
 $7
 content
@@ -1078,10 +1152,18 @@ $7
 content
 $137
 {"postId":"jhwbp8iy","time_start_experiment":1527878988427,"time_end_demo":1527878999184,"time_diff_demo":null,"timestamp":1527878999188}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwc6cye
+$9
+undefined
+$137
+{"postId":"jhwc6cye","time_start_experiment":1527879787359,"time_end_demo":1527879797777,"time_diff_demo":null,"timestamp":1527879797784}
+=======
 jhwbp8iy
 $7
 content
@@ -1096,28 +1178,52 @@ $7
 content
 $137
 {"postId":"jhwbp8iy","time_start_experiment":1527878988427,"time_end_test":1527879053161,"time_diff_test":null,"timestamp":1527879053227}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwc6cye
+$9
+undefined
+$246
+{"postId":"jhwc6cye","time_start_experiment":1527879787359,"time_start_test":1527879798675,"pageID":"test","s1":"27","s2":"26","s3":"24","s4":"24","s5":"24","s6":"24","time_end_test":1527879849647,"time_diff_test":50972,"timestamp":1527879849660}
+=======
 jhwbp8iy
 $7
 content
 $302
 {"postId":"jhwbp8iy","time_start_experiment":1527878988427,"time_start_nasatlx":1527879056557,"pageId":"nasatlx","mental_demand":"0.5","physical_demand":"0.6","temporal_demand":"0.5","performance":"0.7","effort":"0.4","frustration":"0.7","nasatlx_score":"00.50.60.50.70.40.7","timestamp":1527879072795}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwc6cye
+$7
+nasatlx
+$360
+{"postId":"jhwc6cye","time_start_experiment":1527879787359,"time_start_nasatlx":1527879860282,"pageId":"nasatlx","mental_demand":"0.3","physical_demand":"0.4","temporal_demand":"0.5","performance":"0.6","effort":"0.6","frustration":"0.8","nasatlx_score":"00.30.40.50.60.60.8","time_end_nasatlx":1527879867215,"time_diff_nasatlx":6933,"timestamp":1527879867223}
+=======
 jhwbp8iy
 $7
 content
 $143
 {"postId":"jhwbp8iy","time_start_experiment":1527878988427,"time_end_nasatlx":1527879072793,"time_diff_nasatlx":null,"timestamp":1527879072799}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwc6cye
+$12
+demographics
+$292
+{"postId":"jhwc6cye","time_start_experiment":1527879787359,"time_start_demographics":1527879868160,"pageId":"demographics","age":"18-25","sex":"Male","degree":"High School","monitor":"9 or smaller","time_end_demographics":1527879873006,"time_diff_demographics":4846,"timestamp":1527879873015}
+=======
 jhwbp8iy
 $7
 content
@@ -1132,19 +1238,35 @@ $7
 content
 $153
 {"postId":"jhwbp8iy","time_start_experiment":1527878988427,"time_end_demographics":1527879081476,"time_diff_demographics":null,"timestamp":1527879081490}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwc6cye
+$19
+totalExperimentTime
+$181
+{"postId":"jhwc6cye","time_start_experiment":1527879787359,"time_end_experiment":1527879873916,"time_diff_experiment":86557,"pageId":"totalExperimentTime","timestamp":1527879873928}
+=======
 jhwbp8iy
 $7
 content
 $181
 {"postId":"jhwbp8iy","time_start_experiment":1527878988427,"time_end_experiment":1527879082476,"time_diff_experiment":94049,"pageId":"totalExperimentTime","timestamp":1527879082487}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwc6cye
+$7
+debrief
+$122
+{"postId":"jhwc6cye","time_start_experiment":1527879787359,"pageId":"debrief","comments":"jjjj","timestamp":1527879881090}
+=======
 jhwbp8iy
 $7
 content
@@ -1153,28 +1275,52 @@ $128
 *1
 $8
 flushall
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwchv4j
+$7
+consent
+$121
+{"postId":"jhwchv4j","time_start_experiment":1527880324086,"workerId":"xxx","pageId":"consent","timestamp":1527880326627}
+=======
 jhwbv3z4
 $7
 content
 $125
 {"postId":"jhwbv3z4","time_start_experiment":1527879262467,"workerId":"zhenyao","pageId":"consent","timestamp":1527879267799}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwchv4j
+$9
+undefined
+$137
+{"postId":"jhwchv4j","time_start_experiment":1527880324086,"time_end_demo":1527880329953,"time_diff_demo":null,"timestamp":1527880329962}
+=======
 jhwbv3z4
 $7
 content
 $177
 {"postId":"jhwbv3z4","time_start_experiment":1527879262467,"workerId":"zhenyao","pageId":"consent","time_end_demo":1527879271334,"time_diff_demo":null,"timestamp":1527879271341}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwchv4j
+$9
+undefined
+$137
+{"postId":"jhwchv4j","time_start_experiment":1527880324086,"time_end_demo":1527880330328,"time_diff_demo":null,"timestamp":1527880330339}
+=======
 jhwbv3z4
 $7
 content
@@ -1822,15 +1968,24 @@ $7
 content
 $843
 {"postId":"jhwd6ew4","time_start_experiment":1527881469480,"workerId":"zhenyao","pageId":"demographics","time_end_demo":1527881478733,"time_diff_demo":null,"time_start_test":1527881479872,"pageID":"test","s1":"33","s2":"33","s3":"31","s4":"30","s5":"23","s6":"34","time_end_test":1527881534940,"time_diff_test":55068,"time_start_nasatlx":1527881537903,"mental_demand":"0.5","physical_demand":"0.4","temporal_demand":"0.6","performance":"0.3","effort":"0.5","frustration":"0.2","nasatlx_score":"00.50.40.60.30.50.2","time_end_nasatlx":1527881546947,"time_diff_nasatlx":9044,"time_start_demographics":1527881547859,"age":"18-25","sex":"Female","degree":"Bachelors","monitor":"dontknow","time_end_demographics":1527881552945,"time_diff_demographics":5086,"time_end_experiment":1527881553625,"time_diff_experiment":84145,"timestamp":1527881553629}
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
 *4
 $5
 hmset
 $8
+<<<<<<< HEAD
+jhwdahoe
+$7
+consent
+$121
+{"postId":"jhwdahoe","time_start_experiment":1527881659664,"workerId":"sss","pageId":"consent","timestamp":1527881663168}
+=======
 jhwd6ew4
 $7
 content
 $862
 {"postId":"jhwd6ew4","time_start_experiment":1527881469480,"workerId":"zhenyao","pageId":"debrief","time_end_demo":1527881478733,"time_diff_demo":null,"time_start_test":1527881479872,"pageID":"test","s1":"33","s2":"33","s3":"31","s4":"30","s5":"23","s6":"34","time_end_test":1527881534940,"time_diff_test":55068,"time_start_nasatlx":1527881537903,"mental_demand":"0.5","physical_demand":"0.4","temporal_demand":"0.6","performance":"0.3","effort":"0.5","frustration":"0.2","nasatlx_score":"00.50.40.60.30.50.2","time_end_nasatlx":1527881546947,"time_diff_nasatlx":9044,"time_start_demographics":1527881547859,"age":"18-25","sex":"Female","degree":"Bachelors","monitor":"dontknow","time_end_demographics":1527881552945,"time_diff_demographics":5086,"time_end_experiment":1527881553625,"time_diff_experiment":84145,"comments":"jhwd6ew4\n","timestamp":1527881558813}
+<<<<<<< HEAD
 *2
 $6
 SELECT
@@ -2040,3 +2195,6 @@ $7
 content
 $608
 {"postId":"jhwf2vmk","time_start_experiment":1527884663738,"workerId":"zhenyao","pageId":"debrief","time_end_demo":1527884701304,"time_diff_demo":null,"time_start_test":1527884702329,"pageID":"test","s1":"27","s2":"27","s3":"35","s4":"34","s5":"32","s6":"28","time_end_test":1527884755197,"time_diff_test":52868,"time_start_demographics":1527884756269,"age":"18-25","sex":"Female","degree":"Bachelors","monitor":"dontknow","time_end_demographics":1527884775945,"time_diff_demographics":19676,"time_end_experiment":1527884776728,"time_diff_experiment":112990,"comments":"jhwf2vmk\n","timestamp":1527884781566}
+=======
+>>>>>>> e2caede627e79270908485dc8a3bc8ae0b498d22
+>>>>>>> 324d744aa135879260a3cdd12a43afb57cedab47
