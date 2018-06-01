@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Muller-Lyer Illusion</title>
-    <link href ="modules/test/css/prime.css" rel="stylesheet">
-
-    <link href ="css/prime.css" rel="stylesheet">
+    <link href ="modules/test/css/prime.css" rel="stylesheet" type="txt/html">
     <style>
     body {
         background-color: white;
@@ -244,34 +242,34 @@
 
             d3.selectAll('input')
             .filter(function(d) { return this.name === 's1' ? this : null; })
-            .on('click', function() {   console.log(this.value); data.s1 = this.value; validate(); });
+            .on('change', function() {   console.log(this.value); data.s1 = this.value; validate(); });
 
 
             d3.selectAll('input')
             .filter(function(d) { return this.name === 's2' ? this : null; })
-            .on('click', function() {   console.log(this.value); data.s2 = this.value; validate(); });
+            .on('change', function() {   console.log(this.value); data.s2 = this.value; validate(); });
 
 
             d3.selectAll('input')
             .filter(function(d) { return this.name === 's3' ? this : null; })
-            .on('click', function() {   console.log(this.value); data.s3 = this.value; validate(); });
+            .on('change', function() {   console.log(this.value); data.s3 = this.value; validate(); });
 
             d3.selectAll('input')
             .filter(function(d) { return this.name === 's4' ? this : null; })
-            .on('click', function() {   console.log(this.value); data.s4 = this.value; validate(); });
+            .on('change', function() {   console.log(this.value); data.s4 = this.value; validate(); });
 
             d3.selectAll('input')
             .filter(function(d) { return this.name === 's5' ? this : null; })
-            .on('click', function() {   console.log(this.value); data.s5 = this.value; validate(); });
+            .on('change', function() {   console.log(this.value); data.s5 = this.value; validate(); });
 
             d3.selectAll('input')
             .filter(function(d) { return this.name === 's6' ? this : null; })
-            .on('click', function() {   console.log(this.value); data.s6 = this.value; validate(); });
+            .on('change', function() {   console.log(this.value); data.s6 = this.value; validate(); });
 
             function validate() {
                 if(data.s1 != null && data.s2 != null && data.s3 != null && data.s4 != null &&
                     data.s5 != null && data.s6 != null) {
-                experimentr.merge(data);
+                experimentr.addData(data);
                 experimentr.endTimer('test');
                 experimentr.showNext();
                 experimentr.release();

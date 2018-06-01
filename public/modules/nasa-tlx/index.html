@@ -67,34 +67,33 @@ Very Low<input type="range" name ="frustration" min="0.0" max="1.0" value="0" st
 
   d3.selectAll('input')
   .filter(function(d) { return this.name === 'mental_demand' ? this : null; })
-  .on('click', function() {   console.log(this.value); data.mental_demand = this.value; validate(); });
+  .on('change', function() { data.mental_demand = this.value; validate(); });
 
   d3.selectAll('input')
   .filter(function(d) { return this.name === 'physical_demand' ? this : null; })
-  .on('click', function() {  console.log(this.value); data.physical_demand = this.value; validate(); });
+  .on('change', function() { data.physical_demand = this.value; validate(); });
 
   d3.selectAll('input')
   .filter(function(d) { return this.name === 'temporal_demand' ? this : null; })
-  .on('click', function() {  console.log(this.value); data.temporal_demand = this.value; validate(); });
+  .on('change', function() { data.temporal_demand = this.value; validate(); });
 
   d3.selectAll('input')
   .filter(function(d) { return this.name === 'performance' ? this : null; })
-  .on('click', function() {  console.log(this.value); data.performance = this.value; validate(); });
+  .on('change', function() { data.performance = this.value; validate(); });
 
   d3.selectAll('input')
   .filter(function(d) { return this.name === 'effort' ? this : null; })
-  .on('click', function() {  console.log(this.value); data.effort = this.value; validate(); });
+  .on('change', function() { data.effort = this.value; validate(); });
 
   d3.selectAll('input')
   .filter(function(d) { return this.name === 'frustration' ? this : null; })
-  .on('click', function() { console.log(this.value); data.frustration = this.value; validate(); });
+  .on('change', function() { data.frustration = this.value; validate(); });
 
   function validate() {
     if(data.mental_demand != null && data.physical_demand != null && data.temporal_demand != null && data.performance != null &&
       data.effort != null && data.frustration != null) {
-
         grade(data);
-        experimentr.merge(data);
+        experimentr.addData(data);
         experimentr.endTimer('nasatlx');
         experimentr.release();
 

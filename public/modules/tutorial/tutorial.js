@@ -857,7 +857,7 @@ var svg = d3.select(".content")
 
 d3.select(".content").attr("align", "center");
 
-var introPages = 3;
+var introPages = 4;
 var exitPages = 1;
 
 var pageId = null;
@@ -1014,14 +1014,37 @@ function introduction(i) {
 				.attr("y", 410);
 
 			svg.append("text")
-				.text("5/10 means find 5 on the slider whose range is 10.")
+				.text("5/10 means find 5 on the slider whose values range from 1 to 10.")
 				.attr("style", "font-size:15px")
 				.attr("x", 360)
 				.attr("y", 440);
 
 			break;
 
-		case 1:
+            
+        case 1:
+
+			svg.append("image")
+				.attr("xlink:href", "modules/tutorial/images/tutorial4.gif"+"?a="+Math.random())
+				.attr("width", 720)
+				.attr("height", 400)
+				.attr("x", 0)
+				.attr("y", 0);
+
+			svg.append("text")
+				.text("A total number of six slides will appear on the screen in an order.")
+				.attr("x", 360)
+				.attr("y", 450);
+
+			svg.append("text")
+				.text("For each slide, you have ten seconds to complete.")
+				.attr("x", 360)
+				.attr("y", 480)
+				.attr("style", "font-size:15px");
+
+			break;
+            
+		case 2:
 
 			svg.append("image")
 				.attr("xlink:href", "modules/tutorial/images/tutorial-3.gif"+"?a="+Math.random())
@@ -1031,7 +1054,7 @@ function introduction(i) {
 				.attr("y", 0);
 
 			svg.append("text")
-				.text("You can use your mouse to drage the slider.")
+				.text("You can use your mouse to drag the slider.")
 				.attr("x", 360)
 				.attr("y", 410);
 
@@ -1043,7 +1066,7 @@ function introduction(i) {
 
 			break;
 
-		case 2:
+		case 3:
 			svg.append("image")
 				.attr("xlink:href", "modules/tutorial/images/tutorial-2.gif"+"?a="+Math.random())
 				.attr("width", 720)
