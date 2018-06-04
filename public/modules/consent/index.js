@@ -1,6 +1,7 @@
 (function() {
   var data    = {}
     , workers = null;
+  data.pageId = "consent";
 
   init();
 
@@ -24,7 +25,6 @@
 
   function validate() {
     if( data.workerId ) {
-      data.pageId = "consent";
       experimentr.addData(data);
       //experimentr.addData();
       experimentr.release();

@@ -1,9 +1,9 @@
-var experimentr = (function() {
+experimentr = function() {
   var experimentr = { version: "0.0.1" }
-    , sequence
-    , current
-    , mainDiv
-    , data = {};
+  , sequence
+  , current
+  , mainDiv
+  , data = {};
 
   // Add a random postId for each new participant
   data.postId = (+new Date()).toString(36);
@@ -17,11 +17,49 @@ var experimentr = (function() {
     return data;
   };
 
+  // send all mousemovement to websocket to save to redis. 
+  experimentr.sendMouseMovement = function(event) {
+
+    var socket = io.connect();
+    socket.on('connect',function() {
+      // console.log('Client has connected to the server! FROM experimentr');
+    });
+
+
+    var dot, eventDoc, doc, body, pageX, pageY;
+
+        event = event || window.event; // IE-ism
+
+        // If pageX/Y aren't available and clientX/Y are,
+        // calculate pageX/Y - logic taken from jQuery.
+        // (This is to support old IE)
+        if (event.pageX == null && event.clientX != null) {
+          eventDoc = (event.target && event.target.ownerDocument) || document;
+          doc = eventDoc.documentElement;
+          body = eventDoc.body;
+
+          event.pageX = event.clientX +
+          (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
+          (doc && doc.clientLeft || body && body.clientLeft || 0);
+          event.pageY = event.clientY +
+          (doc && doc.scrollTop  || body && body.scrollTop  || 0) -
+          (doc && doc.clientTop  || body && body.clientTop  || 0 );
+        }
+        // console.log(event.pageX + ' '+ event.pageY);
+        timeNow = new Date().getTime();
+        socket.emit('mouseMove',{timestamp: timeNow, mouseX: event.pageX, mouseY: event.pageY});
+      };
+
+experimentr.stopMouseMovementRec = function(event){
+  event.stopPropagation();
+}
+
   // Starts the experiment by loading the first module
   experimentr.start = function() {
     init();
     current = 0;
     activate(current);
+    console.log('IN START')
     experimentr.startTimer('experiment');
   };
 
@@ -30,7 +68,9 @@ var experimentr = (function() {
   experimentr.onNext = function(cb) {
     d3.select('#next-button').on('click', function() {
       cb();
+      console.log('onNext')
       experimentr.next();
+
     });
   };
 
@@ -44,23 +84,24 @@ var experimentr = (function() {
   function init() {
     if(mainDiv) return;
     mainDiv = d3.select('body').append('div')
-      .attr('id', 'experimentr');
+    .attr('id', 'experimentr');
     mainDiv.append('div')
-      .attr('id', 'module');
+    .attr('id', 'module');
     mainDiv.append('div')
-      .attr('id', 'control')
-      .append('button')
-        .attr('type', 'button')
-        .attr('id', 'next-button')
-        .attr('disabled', true)
-        .text('Next')
-        .on('click', experimentr.next);
+    .attr('id', 'control')
+    .append('button')
+    .attr('type', 'button')
+    .attr('id', 'next-button')
+    .attr('disabled', true)
+    .text('Next')
+    .on('click', experimentr.next);
   }
 
   // Load the next module.
   experimentr.next = function() {
     experimentr.clearNext();
     experimentr.showNext();
+    Mousetrap.reset();
     current = current + 1;
     activate(current);
   }
@@ -79,10 +120,10 @@ var experimentr = (function() {
   // The HTTP POST code for saving experiment data.
   experimentr.save = function(d) {
     d3.xhr('/')
-      .header("Content-Type", "application/json")
-      .post(JSON.stringify(data), function(err, res) {
-        if(err) console.log(err);
-      });
+    .header("Content-Type", "application/json")
+    .post(JSON.stringify(data), function(err, res) {
+      if(err) console.log(err);
+    });
   }
 
   // Merges object o2 into o1.
@@ -90,9 +131,14 @@ var experimentr = (function() {
     for (var attr in o2) { o1[attr] = o2[attr]; }
   }
 
+  function concatenate(o1, o2){
+    o1.concat(o2);
+  }
+
   // Enables the Next button so the user can proceed in the experiment.
   experimentr.release = function() {
     d3.select('#next-button').attr('disabled', null);
+
   }
 
   // On some multi-part modules, it is helpful to hide the next button until it is needed.
@@ -149,6 +195,8 @@ var experimentr = (function() {
     data['time_start_'+x] = Date.now();
   }
 
+
+
   // End an existing timer (using a String key)
   // TODO throw an error if a start wasn't called.
   experimentr.endTimer = function(x) {
@@ -187,11 +235,11 @@ var experimentr = (function() {
   // Make sure that backspace doesn't trigger navigation
   document.addEventListener('keydown', function(e) {
     var target = e.target,
-        keyCode = e.keyCode;
+    keyCode = e.keyCode;
 
     var isInputField = target.tagName === "INPUT" || target.tagName === "TEXTAREA",
-        isEditable = target.contentEditable !== null && target.contentEditable === true,
-        isNotForm = !(isInputField || isEditable);
+    isEditable = target.contentEditable !== null && target.contentEditable === true,
+    isNotForm = !(isInputField || isEditable);
 
     if(e.keyCode == 8 && isNotForm) {
       e.preventDefault();
@@ -200,4 +248,4 @@ var experimentr = (function() {
 
   // Returns experimentr so we can use it in index.html
   return experimentr;
-})();
+}();

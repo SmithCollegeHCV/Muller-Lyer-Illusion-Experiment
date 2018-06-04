@@ -55,11 +55,11 @@
 	  d3.selectAll('input')
 	  .filter(function(d) { return this.name === 'age' ? this : null; })
 	  .on('click', function() { data.age = this.value; validate(); });
-  
+  	  
 	  d3.selectAll('input')
 	  .filter(function(d) { return this.name === 'gender' ? this : null; })
-	  .on('click', function() { data.gender = this.value; validate(); });
-  
+	  .on('focusout', function() { data.gender = this.value; console.log(data.gender); validate(); });
+  	  
 	  d3.selectAll('input')
 	  .filter(function(d) { return this.name === 'degree' ? this : null; })
 	  .on('click', function() { data.degree = this.value; validate(); });
@@ -69,9 +69,9 @@
 	  .on('click', function() { data.monitor = this.value; validate(); });
   
 	  function validate() {
-		  if(data.age != null && data.gender  != null && data.degree  != null && data.monitor != null ) {
+		  if(data.age != null && data.gender != null && data.degree  != null && data.monitor != null ) {
 			experimentr.addData(data);
-		  experimentr.endTimer('demographics');
+		  	experimentr.endTimer('demographics');
 			experimentr.release();
 		  }
 		}

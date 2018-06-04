@@ -110,7 +110,7 @@
         <script>
             var data = {};
 
-            data.pageID="test";
+            data.pageId="test";
             experimentr.startTimer('test');
 
             var containers=["ml1","ml2","ml3","ml4","ml5","ml6"];
@@ -147,29 +147,29 @@
 
             d3.selectAll('input')
             .filter(function(d) { return this.name === 's1' ? this : null; })
-            .on('change', function() {   console.log(this.value); data.s1 = this.value; validate(); });
+            .on('change', function() { data.s1 = this.value; validate(); });
 
 
             d3.selectAll('input')
             .filter(function(d) { return this.name === 's2' ? this : null; })
-            .on('change', function() {   console.log(this.value); data.s2 = this.value; validate(); });
+            .on('change', function() { data.s2 = this.value; validate(); });
 
 
             d3.selectAll('input')
             .filter(function(d) { return this.name === 's3' ? this : null; })
-            .on('change', function() {   console.log(this.value); data.s3 = this.value; validate(); });
+            .on('change', function() { data.s3 = this.value; validate(); });
 
             d3.selectAll('input')
             .filter(function(d) { return this.name === 's4' ? this : null; })
-            .on('change', function() {   console.log(this.value); data.s4 = this.value; validate(); });
+            .on('change', function() { data.s4 = this.value; validate(); });
 
             d3.selectAll('input')
             .filter(function(d) { return this.name === 's5' ? this : null; })
-            .on('change', function() {   console.log(this.value); data.s5 = this.value; validate(); });
+            .on('change', function() { data.s5 = this.value; validate(); });
 
             d3.selectAll('input')
             .filter(function(d) { return this.name === 's6' ? this : null; })
-            .on('change', function() {   console.log(this.value); data.s6 = this.value; validate(); });
+            .on('change', function() { data.s6 = this.value; validate(); });
 
             function validate() {
                 if(data.s1 != null && data.s2 != null && data.s3 != null && data.s4 != null &&
