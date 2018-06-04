@@ -3,7 +3,9 @@ M\"uller-Lyer Illustion Experiment
 
 About This Project
 ------------------
-Someone please write a description :-)
+The Muller-Lyer Illusion, named after its creator Franz Carl Muller-Lyer, a German psychiatrist and sociologist, is an illusion where different stylized line images may distort people’s measurement of the lines’ actual length. We are especially interested in how the distortions affect people’s measurement of a certain index position on the line. 
+
+In this test, we have 6 slides of images which include both endpoint arrows pointing inwards, both endpoint arrows expanding outwards, one pointing inwards and one point outwards and two slides with normally displayed endpoints. During the test, each line segment has a range from 1 to ten. We will give a number to survey takers and they are expected to match the position of the number on the ranged line by dragging the slider pointer to the “correct” position. Their answers will be recorded automatically via server, and once we get the result data set, we will be able to analyze the shifts between their answers and the actual position of the number.
 
 Getting Started
 --------------
