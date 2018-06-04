@@ -1080,7 +1080,7 @@ function introduction(i) {
 				.attr("y", 0);
 
 			svg.append("text")
-				.text("A total number of 6 sliders will appear on the screen one after another.")
+				.text("A total of 6 sliders will appear on the screen one after another.")
 				.attr("x", 360)
 				.attr("y", 430);
 
