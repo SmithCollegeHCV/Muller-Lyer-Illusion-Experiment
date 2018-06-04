@@ -1080,18 +1080,18 @@ function introduction(i) {
 				.attr("y", 0);
 
 			svg.append("text")
-				.text("A total number of 6 slides will appear on the screen one after another.")
+				.text("A total number of 6 sliders will appear on the screen one after another.")
 				.attr("x", 360)
 				.attr("y", 430);
 
 			svg.append("text")
-				.text("Please make sure to respond to all the 6 slides.")
+				.text("Please make sure to respond to all 6 sliders.")
 				.attr("x", 360)
 				.attr("y", 455)
 				.attr("style", "font-size:15px");
 
 			svg.append("text")
-				.text("Otherwise, you could not proceed to the next page")
+				.text("If you miss one, you will not be able to proceed to the next page")
 				.attr("x", 360)
 				.attr("y", 475)
 				.attr("style", "font-size:15px");
