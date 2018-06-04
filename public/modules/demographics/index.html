@@ -1,80 +1,79 @@
-<div id = "tutorial">
-		<p style = "text-align:center">
-		<img src = "logo-small.png" width = "150px"/>
 <div id="demographics">
-<p id="demoinstr">
-Thank you! The experiment is almost complete. Please fill out the following demographic information.
-</p>
+	<p style = "text-align:center">
+		<img src = "logo-small.png" width = "150px"/>
+	</p>
+	<p id="demoinstr">
+		Thank you! The experiment is almost complete. Please fill out the following demographic information.
+	</p>
 
-<div id="age"><strong>Your age:</strong>
-    <div id="ages">
-        <input type="radio" id="a1" name="age" value="18-25"> 18-25<br/>
-        <input type="radio" id="a2" name="age" value="25-39"> 25-39<br/>
-        <input type="radio" id="a3" name="age" value="40-49"> 40-49<br/>
-        <input type="radio" id="a4" name="age" value="50-59"> 50-59<br/>
-        <input type="radio" id="a5" name="age" value="60+"> 60+<br/>
-        <input type="radio" id="a6" name="age" value="Unspecified"> Unspecified<br/>
-    </div>
-</div>
-<br>
-<div id="sex"><strong>Your gender:</strong> <input type="text" name="gender">
-</div>
-<br>
-<div id="degree"><strong>Highest educational level obtained:</strong>
-    <div id="degrees">
-        <input type="radio" id="d1" name="degree" value="Some High School"> Some High School<br/>
-        <input type="radio" id="d2" name="degree" value="High School"> High School Diploma<br/>
-        <input type="radio" id="d3" name="degree" value="Bachelors"> Undergraduate Degree<br/>
-        <input type="radio" id="d4" name="degree" value="Graduate"> Graduate Degree<br/>
-        <input type="radio" id="d5" name="degree" value="Other"> Other
-    </div>
-</div>
-<br>
-<div id="monitor"><strong>Your screen size (measured diagonally) is closest to</strong>:
-    <div id="monitors">
-        <input type="radio" id="m4" name="monitor" value="9 or smaller"> 9" or smaller<br/>
-        <input type="radio" id="m4" name="monitor" value=11> 11"<br/>
-        <input type="radio" id="m4" name="monitor" value=13> 13"<br/>
-        <input type="radio" id="m4" name="monitor" value=15> 15"<br/>
-        <input type="radio" id="m4" name="monitor" value=17> 17"<br/>
-        <input type="radio" id="m4" name="monitor" value=19> 19"<br/>
-        <input type="radio" id="m4" name="monitor" value=21> 21"<br/>
-        <input type="radio" id="m5" name="monitor" value="23 or larger"> 23" or larger<br/>
-        <input type="radio" id="m5" name="monitor" value="dontknow"> I'm not sure
-    </div>
-</div>
-<br>
+	<div id="age"><strong>Your age:</strong>
+		<div id="ages">
+			<input type="radio" id="a1" name="age" value="18-25"> 18-25<br/>
+			<input type="radio" id="a2" name="age" value="25-39"> 25-39<br/>
+			<input type="radio" id="a3" name="age" value="40-49"> 40-49<br/>
+			<input type="radio" id="a4" name="age" value="50-59"> 50-59<br/>
+			<input type="radio" id="a5" name="age" value="60+"> 60+<br/>
+			<input type="radio" id="a6" name="age" value="Unspecified"> Unspecified<br/>
+		</div>
+	</div>
+	<br>
+	<div id="sex"><strong>Your gender:</strong> <input type="text" name="gender">
+	</div>
+	<br>
+	<div id="degree"><strong>Highest educational level obtained:</strong>
+		<div id="degrees">
+			<input type="radio" id="d1" name="degree" value="Some High School"> Some High School<br/>
+			<input type="radio" id="d2" name="degree" value="High School"> High School Diploma<br/>
+			<input type="radio" id="d3" name="degree" value="Bachelors"> Undergraduate Degree<br/>
+			<input type="radio" id="d4" name="degree" value="Graduate"> Graduate Degree<br/>
+			<input type="radio" id="d5" name="degree" value="Other"> Other
+		</div>
+	</div>
+	<br>
+	<div id="monitor"><strong>Your screen size (measured diagonally) is closest to</strong>:
+		<div id="monitors">
+			<input type="radio" id="m4" name="monitor" value="9 or smaller"> 9" or smaller<br/>
+			<input type="radio" id="m4" name="monitor" value=11> 11"<br/>
+			<input type="radio" id="m4" name="monitor" value=13> 13"<br/>
+			<input type="radio" id="m4" name="monitor" value=15> 15"<br/>
+			<input type="radio" id="m4" name="monitor" value=17> 17"<br/>
+			<input type="radio" id="m4" name="monitor" value=19> 19"<br/>
+			<input type="radio" id="m4" name="monitor" value=21> 21"<br/>
+			<input type="radio" id="m5" name="monitor" value="23 or larger"> 23" or larger<br/>
+			<input type="radio" id="m5" name="monitor" value="dontknow"> I'm not sure
+		</div>
+	</div>
+	<br>
 </div>
 
-<script> 
-(function() {
-  var data = {};
-  data.pageId = "demographics";
-  experimentr.startTimer('demographics');
+	<script> 
+	(function() {
+	  var data = {};
+	  data.pageId = "demographics";
+	  experimentr.startTimer('demographics');
 
-  d3.selectAll('input')
-  .filter(function(d) { return this.name === 'age' ? this : null; })
-  .on('click', function() { data.age = this.value; validate(); });
+	  d3.selectAll('input')
+	  .filter(function(d) { return this.name === 'age' ? this : null; })
+	  .on('click', function() { data.age = this.value; validate(); });
   
-  d3.selectAll('input')
-  .filter(function(d) { return this.name === 'sex' ? this : null; })
-  .on('click', function() { data.sex = this.value; validate(); });
+	  d3.selectAll('input')
+	  .filter(function(d) { return this.name === 'sex' ? this : null; })
+	  .on('click', function() { data.sex = this.value; validate(); });
   
-  d3.selectAll('input')
-  .filter(function(d) { return this.name === 'degree' ? this : null; })
-  .on('click', function() { data.degree = this.value; validate(); });
+	  d3.selectAll('input')
+	  .filter(function(d) { return this.name === 'degree' ? this : null; })
+	  .on('click', function() { data.degree = this.value; validate(); });
   
-  d3.selectAll('input')
-  .filter(function(d) { return this.name === 'monitor' ? this : null; })
-  .on('click', function() { data.monitor = this.value; validate(); });
+	  d3.selectAll('input')
+	  .filter(function(d) { return this.name === 'monitor' ? this : null; })
+	  .on('click', function() { data.monitor = this.value; validate(); });
   
-  function validate() {
-	  if(data.age != null && data.sex  != null && data.degree  != null && data.monitor != null ) {
-	    experimentr.addData(data);
-      experimentr.endTimer('demographics');
-	    experimentr.release();
-	  }
-	}
-}());
-</script>
-</div>
+	  function validate() {
+		  if(data.age != null && data.sex  != null && data.degree  != null && data.monitor != null ) {
+			experimentr.addData(data);
+		  experimentr.endTimer('demographics');
+			experimentr.release();
+		  }
+		}
+	}());
+	</script>
