@@ -17,7 +17,7 @@
 		</div>
 	</div>
 	<br>
-	<div id="sex"><strong>Your gender:</strong> <input type="text" name="gender">
+	<div id="gender"><strong>Your gender:</strong> <input type="text" name="gender">
 	</div>
 	<br>
 	<div id="degree"><strong>Highest educational level obtained:</strong>
@@ -57,8 +57,8 @@
 	  .on('click', function() { data.age = this.value; validate(); });
   
 	  d3.selectAll('input')
-	  .filter(function(d) { return this.name === 'sex' ? this : null; })
-	  .on('click', function() { data.sex = this.value; validate(); });
+	  .filter(function(d) { return this.name === 'gender' ? this : null; })
+	  .on('click', function() { data.gender = this.value; validate(); });
   
 	  d3.selectAll('input')
 	  .filter(function(d) { return this.name === 'degree' ? this : null; })
@@ -69,7 +69,7 @@
 	  .on('click', function() { data.monitor = this.value; validate(); });
   
 	  function validate() {
-		  if(data.age != null && data.sex  != null && data.degree  != null && data.monitor != null ) {
+		  if(data.age != null && data.gender  != null && data.degree  != null && data.monitor != null ) {
 			experimentr.addData(data);
 		  experimentr.endTimer('demographics');
 			experimentr.release();
