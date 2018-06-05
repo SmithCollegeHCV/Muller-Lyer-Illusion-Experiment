@@ -1,4 +1,4 @@
-M\"uller-Lyer Illustion Experiment 
+Müller-Lyer Illustion Experiment 
 =========================
 
 About This Project
