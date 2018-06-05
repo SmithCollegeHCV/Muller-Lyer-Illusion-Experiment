@@ -45,11 +45,11 @@ From there you must open a new terminal window and navigate to a folder where yo
 sftp [enter ip address here]
 
 you will be prompted for a password or a pem. Once you have accessed the server navigate to the following folder:
-root/StreamingData/analysis/results 
+root/Muller-Lyer-Illusion-Experiment/analysis/results 
 
 to pull down the results file run the following command 
 
-get results.json 
+get data.json 
 
 you then can exit and the file will be in the appropriate folder. 
 
