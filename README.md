@@ -26,6 +26,8 @@ and that should start the app at 'localhost:4000'.
 
 To add or remove pages to the experimentr module go to the index.html page within public/ and add a module. They are listed by folder name. 
 
+To change condition version, go to the index.html line 22 'modules/tests/test7/'; you can change test into test0-test10.
+
 
 Pulling down results 
 ---------------------
