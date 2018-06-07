@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Muller-Lyer Illusion</title>
+    <link href ="modules/tests/css/prime.css" rel="stylesheet" >
+    <style>
+    body {
+        background-color: white;
+        margin: auto;
+        margin-left: 300px;
+        transform: scale(0.8);
+        transform-origin: 0 0;
+    }
+      </style>
+  </head>
+
+  <body style="margin-left: 230px;">
+    <!--
+    <div id="enter" class="enter">
+        <h2 style="text-align: center;font-weight: bold; font-size: 170%" > Welcome to <br />Muller-Layer Illusion Test</h2>
+        <div style="margin-top: 10px; margin-left: 15px; margin-right: 10px; font-weight: bold; font-size: 125%"> Instruction: In this test, we will give you a number, 6 range sliders for which you will slide to a certain point that you think matches the given number. Only one range slider will appear each time, and you have 10 seconds to slide.</div>
+        <button type="button" id="getin" class="button0" onclick="showupFunction()" style="display:initial; ">Enter The Test</button>
+    </div>
+    <div id='mengban' style="background-color: white; opacity: 0.9; height: 750px; width: 1435px; z-index: 0;position: absolute;margin: 0px">
+    </div>
+    -->
+      
+    <div id='ex_pic_container' class='ex_pic_container' style="margin-top: 50px; width: 80%; height: 80%">
+        <div class='tags'>
+            <div class="subtag" id='ml1_tag' style='margin-left: 0px; background-color: grey'><p style="text-align: center; font-size: 100%">1</p></div>
+            <div class="subtag" id='ml2_tag'><p style="text-align: center; font-size: 100%">2</p></div>
+            <div class="subtag" id='ml3_tag'><p style="text-align: center; font-size: 100%">3</p></div>
+                <div class="subtag" id='ml4_tag'><p style="text-align: center; font-size: 100%">4</p></div>
+                <div class="subtag" id='ml5_tag'><p style="text-align: center; font-size: 100%">5</p></div>
+                <div class="subtag" id='ml6_tag'><p style="text-align: center; font-size: 100%">6</p></div>
+        </div>
+
+    <div id='timer' class="timer">
+        <progress value="0" max="10" id="progressBar"></progress>
+        <div id="useless"></div>
+        <div style="text-align: center"><h2>Please estimate the position of <u style="color: blue">0/10</u> on the slider bar.</h2></div>
+    </div> 
+
+
+    <div class="pic_overall_container">
+    <div class = 'pic_container' id='ml1' style="visibility:visible;">
+        <div id='sl1'> 
+            <div style="background-image: url(modules/tests/image/ml_1.png);width:300px;height: 300px">
+            </div>
+            <div id="slider">
+              <input type="range" name='s1' name="points" min="0" max="100" class="myslider" value="0">
+            </div>
+        </div>
+    </div>
+
+    <div class = 'pic_container' id='ml2' style="visibility:hidden;"> 
+        <div id='sl2'> 
+            <div style="background-image: url(modules/tests/image/ml_2.png);width:300px;height: 300px">
+            </div>
+            <div id="slider2">
+              <input type="range" name='s2' name="points" min="0" max="100" class="myslider" value="0">
+            </div>
+        </div>
+    </div>
+
+    <div class = 'pic_container' id='ml3' style="visibility:hidden;"> 
+        <div id='sl3'> 
+            <div style="background-image: url(modules/tests/image/ml_3.png);width:300px;height: 300px">
+            </div>
+            <div id="slider3" >
+              <input type="range" name='s3' name="points" min="0" max="100" class="myslider" value="0">
+            </div>
+        </div>
+    </div>
+
+    <div class = 'pic_container' id='ml4' style="visibility:hidden;"> 
+        <div id='sl4'> 
+            <div style="background-image: url(modules/tests/image/ml_4.png);width:300px;height: 300px">
+            </div>
+            <div id="slider4">
+              <input type="range" name='s4' name="points" min="0" max="100" class="myslider" value="0">
+            </div>
+        </div>
+    </div>
+
+    <div class = 'pic_container' id='ml5' style="visibility:hidden;"> 
+        <div id='sl5'> 
+            <div style="background-image: url(modules/tests/image/ml_5.png);width:300px;height: 300px">
+            </div>
+            <div id="slider5">
+              <input type="range" name='s5' name="points" min="0" max="100" class="myslider" value="0">
+            </div>
+        </div>
+    </div>
+
+    <div class = 'pic_container' id='ml6' style="visibility:hidden;"> 
+        <div id='sl6'> 
+            <div style="background-image: url(modules/tests/image/ml_6.png);width:300px;height: 300px">
+            </div>
+            <div id="slider6">
+              <input type="range" name='s6' name="points" min="0" max="100" class="myslider" value="0">
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+    
+        <script>
+            var data = {};
+            data.conditionVersion = "test0";
+            data.pageId="test";
+            experimentr.startTimer('test');
+
+            var containers=["ml1","ml2","ml3","ml4","ml5","ml6"];
+            var containers2=['ml1_tag','ml2_tag','ml3_tag','ml4_tag','ml5_tag','ml6_tag']
+
+            experimentr.hideNext();
+
+            function CountdownTimer(i){
+                var timeleft = 10;
+                var Timer = setInterval(function(){
+                  document.getElementById("progressBar").value = 10 - --timeleft;
+                  if(timeleft <= 0)
+                    clearInterval(Timer);
+                },1000);
+                
+            }  
+            (function loop(i){
+                CountdownTimer(i);
+                setTimeout(function(){
+                  if (i <= 4){
+                    document.getElementById(containers[i]).style.visibility="hidden";
+                    document.getElementById(containers[i+1]).style.visibility="visible";
+                    document.getElementById(containers[i+1]).style.borderColor="dimgrey";
+                    document.getElementById(containers2[i]).style.backgroundColor="#d7d7d7";
+                    document.getElementById(containers2[i+1]).style.backgroundColor="grey";
+                  } else {
+                    document.getElementById(containers[i]).style.visibility="hidden";
+                  }
+                  if (i++ <= 4){
+                        loop(i);
+                  }
+                },10000);
+            })(0);
+
+            d3.selectAll('input')
+            .filter(function(d) { return this.name === 's1' ? this : null; })
+            .on('change', function() { data.s1 = this.value; validate(); });
+
+
+            d3.selectAll('input')
+            .filter(function(d) { return this.name === 's2' ? this : null; })
+            .on('change', function() { data.s2 = this.value; validate(); });
+
+
+            d3.selectAll('input')
+            .filter(function(d) { return this.name === 's3' ? this : null; })
+            .on('change', function() { data.s3 = this.value; validate(); });
+
+            d3.selectAll('input')
+            .filter(function(d) { return this.name === 's4' ? this : null; })
+            .on('change', function() { data.s4 = this.value; validate(); });
+
+            d3.selectAll('input')
+            .filter(function(d) { return this.name === 's5' ? this : null; })
+            .on('change', function() { data.s5 = this.value; validate(); });
+
+            d3.selectAll('input')
+            .filter(function(d) { return this.name === 's6' ? this : null; })
+            .on('change', function() { data.s6 = this.value; validate(); });
+            
+
+            function validate() {
+                if(data.s1 != null && data.s2 != null && data.s3 != null && data.s4 != null &&
+                    data.s5 != null && data.s6 != null) {
+                experimentr.addData(data);
+                experimentr.endTimer('test');
+                experimentr.showNext();
+                experimentr.release();
+                }
+            }
+
+        </script>
+
+   
+
+
+      
+    </body>
+</html>

@@ -143,6 +143,7 @@ var experimentr = (function() {
     return experimentr;
   }
 
+
   // Start a timer with a given String as key
   experimentr.startTimer = function(x) {
     console.log('starting timer: '+x);

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Muller-Lyer Illusion</title>
-    <link href ="modules/test/css/prime.css" rel="stylesheet" type="txt/html">
+    <link href ="modules/tests/css/prime.css" rel="stylesheet" >
     <style>
     body {
         background-color: white;
@@ -39,14 +39,14 @@
     <div id='timer' class="timer">
         <progress value="0" max="10" id="progressBar"></progress>
         <div id="useless"></div>
-        <div style="text-align: center"><h2>Please estimate the position of <u style="color: blue">3/10</u> on the slider bar.</h2></div>
+        <div style="text-align: center"><h2>Please estimate the position of <u style="color: blue">6/10</u> on the slider bar.</h2></div>
     </div> 
 
 
     <div class="pic_overall_container">
     <div class = 'pic_container' id='ml1' style="visibility:visible;">
         <div id='sl1'> 
-            <div style="background-image: url(modules/test/image/ml_1.png);width:300px;height: 300px">
+            <div style="background-image: url(modules/tests/image/ml_1.png);width:300px;height: 300px">
             </div>
             <div id="slider">
               <input type="range" name='s1' name="points" min="0" max="100" class="myslider" value="0">
@@ -56,7 +56,7 @@
 
     <div class = 'pic_container' id='ml2' style="visibility:hidden;"> 
         <div id='sl2'> 
-            <div style="background-image: url(modules/test/image/ml_2.png);width:300px;height: 300px">
+            <div style="background-image: url(modules/tests/image/ml_2.png);width:300px;height: 300px">
             </div>
             <div id="slider2">
               <input type="range" name='s2' name="points" min="0" max="100" class="myslider" value="0">
@@ -66,7 +66,7 @@
 
     <div class = 'pic_container' id='ml3' style="visibility:hidden;"> 
         <div id='sl3'> 
-            <div style="background-image: url(modules/test/image/ml_3.png);width:300px;height: 300px">
+            <div style="background-image: url(modules/tests/image/ml_3.png);width:300px;height: 300px">
             </div>
             <div id="slider3" >
               <input type="range" name='s3' name="points" min="0" max="100" class="myslider" value="0">
@@ -76,7 +76,7 @@
 
     <div class = 'pic_container' id='ml4' style="visibility:hidden;"> 
         <div id='sl4'> 
-            <div style="background-image: url(modules/test/image/ml_4.png);width:300px;height: 300px">
+            <div style="background-image: url(modules/tests/image/ml_4.png);width:300px;height: 300px">
             </div>
             <div id="slider4">
               <input type="range" name='s4' name="points" min="0" max="100" class="myslider" value="0">
@@ -86,7 +86,7 @@
 
     <div class = 'pic_container' id='ml5' style="visibility:hidden;"> 
         <div id='sl5'> 
-            <div style="background-image: url(modules/test/image/ml_5.png);width:300px;height: 300px">
+            <div style="background-image: url(modules/tests/image/ml_5.png);width:300px;height: 300px">
             </div>
             <div id="slider5">
               <input type="range" name='s5' name="points" min="0" max="100" class="myslider" value="0">
@@ -96,7 +96,7 @@
 
     <div class = 'pic_container' id='ml6' style="visibility:hidden;"> 
         <div id='sl6'> 
-            <div style="background-image: url(modules/test/image/ml_6.png);width:300px;height: 300px">
+            <div style="background-image: url(modules/tests/image/ml_6.png);width:300px;height: 300px">
             </div>
             <div id="slider6">
               <input type="range" name='s6' name="points" min="0" max="100" class="myslider" value="0">
@@ -109,7 +109,7 @@
     
         <script>
             var data = {};
-
+            data.conditionVersion = "test6";
             data.pageId="test";
             experimentr.startTimer('test');
 
@@ -170,6 +170,7 @@
             d3.selectAll('input')
             .filter(function(d) { return this.name === 's6' ? this : null; })
             .on('change', function() { data.s6 = this.value; validate(); });
+            
 
             function validate() {
                 if(data.s1 != null && data.s2 != null && data.s3 != null && data.s4 != null &&
