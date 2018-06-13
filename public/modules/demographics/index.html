@@ -46,9 +46,11 @@
 	<br>
 </div>
 
+    <script src="../../../node_modules/platform.js/platform.js"></script>
 	<script> 
 	(function() {
 	  var data = {};
+      data.platform = platform.description;
 	  data.pageId = "demographics";
 	  experimentr.startTimer('demographics');
 

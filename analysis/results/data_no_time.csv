@@ -1,7 +1,22 @@
-postId,workerId,pageId,conditionVersion,s1,s2,s3,s4,s5,s6,age,gender,degree,monitor,comments
-ji4xfz2p,ddd,debrief,test1,10,15,16,9,10,12,18-25,ChrsiTest1,Some High School,13,This is test1
-ji4xlv7z,test4,debrief,test4,36,30,34,31,30,28,60+,Test4,Some High School,15,This is Test 4
-ji4xnwaf,Test5,debrief,test5,51,50,53,52,50,58,40-49,Test5,Other,21,This is test5
-ji4xhwje,test2,debrief,test2,19,17,22,19,18,20,25-39,ChrisTest2,High School,15,This is test 2
-ji4xpu7z,Test7,debrief,test7,72,67,65,72,63,65,60+,Test7,Graduate,21,Test7
-ji4xjufk,test3,debrief,test3,26,24,26,22,23,24,60+,Test3,Other,19,This is Test3
+postId,workerId,pageId,conditionVersion,s1,s2,s3,s4,s5,s6,age,gender,degree,monitor,comments,platform
+ji6b3rsq,hs,debrief,test9,48,26,72,34,50,2,25-39,Chria Bug test,Graduate,9 or smaller,ss,
+jidb5eld,fff,consent,,,,,,,,,,,,,
+ji4z186o,FireFoxTest9,debrief,test9,76,88,78,81,80,77,50-59,FireFox,High School,17,FireFox sucks!,
+jidb7aa5,ChrisTest1208,test,test7,44,78,75,18,34,73,,,,,,
+jidblqxt,ChrisTest1219,debrief,test7,73,35,66,50,48,67,18-25,Chris1220,Some High School,9 or smaller,TestChris1220,Chrome 66.0.3359.181 on OS X 10.12.6 64-bit
+ji4xnwaf,Test5,debrief,test5,51,50,53,52,50,58,40-49,Test5,Other,21,This is test5,
+ji69a7ra,sss,consent,,,,,,,,,,,,,
+ji4xjufk,test3,debrief,test3,26,24,26,22,23,24,60+,Test3,Other,19,This is Test3,
+jidbcbrl,Chris Test1215,test,test7,42,77,21,46,70,40,,,,,,
+ji4yuwji,safariTest8,debrief,test7,73,69,70,65,60,74,50-59,SafariTest8,Graduate,17,Commont8,
+jid6jm8x,Chris,test,test7,55,91,12,65,36,25,,,,,,
+ji4xfz2p,ddd,debrief,test1,10,15,16,9,10,12,18-25,ChrsiTest1,Some High School,13,This is test1,
+ji4xlv7z,test4,debrief,test4,36,30,34,31,30,28,60+,Test4,Some High School,15,This is Test 4,
+jid698xw,Chris,test,test0,52,51,82,46,27,42,,,,,,
+ji4xpu7z,Test7,debrief,test7,72,67,65,72,63,65,60+,Test7,Graduate,21,Test7,
+ji4yx8l5,xxx,consent,,,,,,,,,,,,,
+jid67064,Chris,consent,,,,,,,,,,,,,
+jid9rewz,Chris,test,test7,80,71,64,40,84,47,,,,,,
+jidb0v1t,Chris Test1203,test,test7,68,30,60,22,53,84,,,,,,
+ji69bqax,bugtest,consent,,,,,,,,,,,,,
+ji4xhwje,test2,debrief,test2,19,17,22,19,18,20,25-39,ChrisTest2,High School,15,This is test 2,
