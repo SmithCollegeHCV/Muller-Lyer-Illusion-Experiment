@@ -3,7 +3,7 @@
 	data.pageId = "tutorial";
 	experimentr.startTimer('tutorial');
 
-	var introPages = 4;
+	var introPages = 5;
 	var exitPages = 1;
 	var step = -1;
 
@@ -229,6 +229,37 @@
 					.attr("style", "font-size:15px");
 
 				break;
+
+			case 4:
+				svg.append("text")
+					.text("You must answer as accurate as possible.")
+					.style("font-weight","bold")
+					.style("font-size","24px")
+					.attr("x", 360)
+					.attr("y", 70);
+
+				svg.append("text")
+					.text("you will earn a")
+					.attr("x", 200)
+					.attr("y", 110);
+
+				svg.append("text")
+					.text("$0.10 bonus")
+					.style("font-weight","bold")
+					.style("font-size","22px")
+					.attr("x", 360)
+					.attr("y", 110)
+
+				svg.append("text")
+					.text("for each answer")
+					.attr("x", 530)
+					.attr("y", 110)
+
+				svg.append("text")
+					.text("that is within 1 point of correct.")
+					.attr("x", 360)
+					.attr("y", 140)
+
 		}
 	}
 	/** Has the content for the final pages of tutorial
