@@ -83,6 +83,9 @@ body {
     background: #000000;
     opacity: 1;
 }
+input[type=range]::-ms-tooltip {
+    display: none;
+}
 /*
 .enter{
     background-image: url(../image/bg.png);
