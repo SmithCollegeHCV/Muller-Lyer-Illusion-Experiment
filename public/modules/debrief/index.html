@@ -33,6 +33,8 @@ Thank you again for your participation. Feel free submit any additional comments
     , data    = {};
 
   data.pageId = 'debrief';
+  Mousetrap.unbind('left');
+  Mousetrap.unbind('right');
 
   d3.select("#postId").text(postId);
 
