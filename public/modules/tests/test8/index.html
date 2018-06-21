@@ -28,7 +28,7 @@
       
     <div id='ex_pic_container' class='ex_pic_container' style="margin-top: 50px; width: 80%; height: 80%">
         <div class='tags'>
-            <div class="subtag" id='ml1_tag' style='margin-left: 0px'><p style="text-align: center; font-size: 100%">1</p></div>
+            <div class="subtag" id='ml1_tag' style='margin-left: 0px;background-color: grey'><p style="text-align: center; font-size: 100%">1</p></div>
             <div class="subtag" id='ml2_tag'><p style="text-align: center; font-size: 100%">2</p></div>
             <div class="subtag" id='ml3_tag'><p style="text-align: center; font-size: 100%">3</p></div>
                 <div class="subtag" id='ml4_tag'><p style="text-align: center; font-size: 100%">4</p></div>
@@ -46,75 +46,67 @@
 
 
     <div class="pic_overall_container">
-    <div class = 'pic_container' id='ml1' style="visibility:hidden;">
-        <div id='sl1'> 
-            <div style="background-image: url(modules/tests/image/ml_1.png);width:300px;height: 300px">
-            </div>
+        <div class = 'pic_container' id='ml1' style="visibility:visible;"></div>
+        <div class = 'pic_container' id='ml2' style="visibility:hidden;"></div>
+        <div class = 'pic_container' id='ml3' style="visibility:hidden;"></div>
+        <div class = 'pic_container' id='ml4' style="visibility:hidden;"> </div>
+        <div class = 'pic_container' id='ml5' style="visibility:hidden;"></div>
+        <div class = 'pic_container' id='ml6' style="visibility:hidden;"></div>
+
+        <div id='sl1' style="visibility:hidden;"> 
+            <div style="background-image: url(modules/tests/image/ml_1.png);width:300px;height: 300px"></div>
             <div id="slider">
               <input type="range" name='s1' name="points" min="0" max="100" class="myslider" value="0">
             </div>
         </div>
-    </div>
 
-    <div class = 'pic_container' id='ml2' style="visibility:hidden;"> 
-        <div id='sl2'> 
-            <div style="background-image: url(modules/tests/image/ml_2.png);width:300px;height: 300px">
-            </div>
-            <div id="slider2">
+        <div id='sl2' style="visibility:hidden;"> 
+            <div style="background-image: url(modules/tests/image/ml_2.png);width:300px;height: 300px"></div>
+            <div id="slider">
               <input type="range" name='s2' name="points" min="0" max="100" class="myslider" value="0">
             </div>
         </div>
-    </div>
 
-    <div class = 'pic_container' id='ml3' style="visibility:hidden;"> 
-        <div id='sl3'> 
-            <div style="background-image: url(modules/tests/image/ml_3.png);width:300px;height: 300px">
-            </div>
-            <div id="slider3" >
+        <div id='sl3' style="visibility:hidden;"> 
+            <div style="background-image: url(modules/tests/image/ml_3.png);width:300px;height: 300px"></div>
+            <div id="slider">
               <input type="range" name='s3' name="points" min="0" max="100" class="myslider" value="0">
             </div>
         </div>
-    </div>
 
-    <div class = 'pic_container' id='ml4' style="visibility:hidden;"> 
-        <div id='sl4'> 
-            <div style="background-image: url(modules/tests/image/ml_4.png);width:300px;height: 300px">
-            </div>
-            <div id="slider4">
+        <div id='sl4' style="visibility:hidden;"> 
+            <div style="background-image: url(modules/tests/image/ml_4.png);width:300px;height: 300px"></div>
+            <div id="slider">
               <input type="range" name='s4' name="points" min="0" max="100" class="myslider" value="0">
             </div>
         </div>
-    </div>
 
-    <div class = 'pic_container' id='ml5' style="visibility:hidden;"> 
-        <div id='sl5'> 
-            <div style="background-image: url(modules/tests/image/ml_5.png);width:300px;height: 300px">
-            </div>
-            <div id="slider5">
+        <div id='sl5' style="visibility:hidden;"> 
+            <div style="background-image: url(modules/tests/image/ml_5.png);width:300px;height: 300px"></div>
+            <div id="slider">
               <input type="range" name='s5' name="points" min="0" max="100" class="myslider" value="0">
             </div>
         </div>
-    </div>
 
-    <div class = 'pic_container' id='ml6' style="visibility:hidden;"> 
-        <div id='sl6'> 
-            <div style="background-image: url(modules/tests/image/ml_6.png);width:300px;height: 300px">
-            </div>
-            <div id="slider6">
+        <div id='sl6' style="visibility:hidden;"> 
+            <div style="background-image: url(modules/tests/image/ml_6.png);width:300px;height: 300px"></div>
+            <div id="slider">
               <input type="range" name='s6' name="points" min="0" max="100" class="myslider" value="0">
             </div>
         </div>
-    </div>
+
     </div>
 
-</div>
-    
+   
         <script>
             var data = {};
             data.conditionVersion = "test8";
             data.pageId="test";
             experimentr.startTimer('test');
 
+            var sliders=["sl1","sl2","sl3","sl4","sl5","sl6"];
+
+            
             var containers=[["ml1",'ml1_tag'],["ml2",'ml2_tag'],["ml3",'ml3_tag'],["ml4",'ml4_tag'],["ml5",'ml5_tag'],["ml6",'ml6_tag']];
             
             function shuffle(array) {
@@ -137,14 +129,14 @@
             }
 
             function rearrange(_callback){
-                shuffle(containers);
+                shuffle(sliders);
                 _callback();
             }
 
 
             rearrange(function(){
-                document.getElementById(containers[0][0]).style.visibility="visible";
-                document.getElementById(containers[0][1]).style.backgroundColor="grey";
+                console.log(sliders)
+                document.getElementById(sliders[0]).style.visibility="visible";
                 function CountdownTimer(i){
                     var timeleft = 10;
                     var Timer = setInterval(function(){
@@ -159,14 +151,33 @@
                     CountdownTimer(i);
                     setTimeout(function(){
                       if (i <= 4){
-                        console.log(containers[i])
+                        var element = document.getElementById(sliders[i+1]),
+                                style = window.getComputedStyle(element),
+                                left = style.getPropertyValue('left'),
+                                top = style.getPropertyValue('top');
+                        console.log(top)
+                        if (i<=1){
+                            currentLeft=parseInt(left.substring(0, left.length-2))+(i+1)*300;
+                            newLeft=currentLeft.toString()+"px";
+                            document.getElementById(sliders[i+1]).style.left=newLeft;
+                        } else {
+                            currentTop=parseInt(top.substring(0, top.length-2))+300;
+                            newTop=currentTop.toString()+"px";
+                            currentLeft=parseInt(left.substring(0, left.length-2))+(i-2)*300;
+                            newLeft=currentLeft.toString()+"px";
+                            document.getElementById(sliders[i+1]).style.top=newTop;
+                            document.getElementById(sliders[i+1]).style.left=newLeft;
+                        }
+                        document.getElementById(sliders[i]).style.visibility="hidden";
+                        document.getElementById(sliders[i+1]).style.visibility="visible";
                         document.getElementById(containers[i][0]).style.visibility="hidden";
                         document.getElementById(containers[i+1][0]).style.visibility="visible";
                         document.getElementById(containers[i+1][0]).style.borderColor="dimgrey";
                         document.getElementById(containers[i][1]).style.backgroundColor="#d7d7d7";
                         document.getElementById(containers[i+1][1]).style.backgroundColor="grey";
                       } else {
-                        document.getElementById(containers[i]).style.visibility="hidden";
+                        document.getElementById(containers[i][0]).style.visibility="hidden";
+                        document.getElementById(sliders[i]).style.visibility="hidden";
                       }
                       if (i++ <= 4){
                             loop(i);
@@ -217,10 +228,7 @@
                 experimentr.release();
                 }
             }
-
         </script>
-
-
    
 
 
