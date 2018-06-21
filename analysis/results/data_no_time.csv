@@ -1,22 +1,66 @@
 postId,workerId,pageId,conditionVersion,s1,s2,s3,s4,s5,s6,age,gender,degree,monitor,comments,platform
-ji6b3rsq,hs,debrief,test9,48,26,72,34,50,2,25-39,Chria Bug test,Graduate,9 or smaller,ss,
-jidb5eld,fff,consent,,,,,,,,,,,,,
-ji4z186o,FireFoxTest9,debrief,test9,76,88,78,81,80,77,50-59,FireFox,High School,17,FireFox sucks!,
-jidb7aa5,ChrisTest1208,test,test7,44,78,75,18,34,73,,,,,,
-jidblqxt,ChrisTest1219,debrief,test7,73,35,66,50,48,67,18-25,Chris1220,Some High School,9 or smaller,TestChris1220,Chrome 66.0.3359.181 on OS X 10.12.6 64-bit
-ji4xnwaf,Test5,debrief,test5,51,50,53,52,50,58,40-49,Test5,Other,21,This is test5,
-ji69a7ra,sss,consent,,,,,,,,,,,,,
-ji4xjufk,test3,debrief,test3,26,24,26,22,23,24,60+,Test3,Other,19,This is Test3,
-jidbcbrl,Chris Test1215,test,test7,42,77,21,46,70,40,,,,,,
-ji4yuwji,safariTest8,debrief,test7,73,69,70,65,60,74,50-59,SafariTest8,Graduate,17,Commont8,
-jid6jm8x,Chris,test,test7,55,91,12,65,36,25,,,,,,
-ji4xfz2p,ddd,debrief,test1,10,15,16,9,10,12,18-25,ChrsiTest1,Some High School,13,This is test1,
-ji4xlv7z,test4,debrief,test4,36,30,34,31,30,28,60+,Test4,Some High School,15,This is Test 4,
-jid698xw,Chris,test,test0,52,51,82,46,27,42,,,,,,
-ji4xpu7z,Test7,debrief,test7,72,67,65,72,63,65,60+,Test7,Graduate,21,Test7,
-ji4yx8l5,xxx,consent,,,,,,,,,,,,,
-jid67064,Chris,consent,,,,,,,,,,,,,
-jid9rewz,Chris,test,test7,80,71,64,40,84,47,,,,,,
-jidb0v1t,Chris Test1203,test,test7,68,30,60,22,53,84,,,,,,
-ji69bqax,bugtest,consent,,,,,,,,,,,,,
-ji4xhwje,test2,debrief,test2,19,17,22,19,18,20,25-39,ChrisTest2,High School,15,This is test 2,
+jidg82gd,A1GFGZJPLCHHFH,consent,,,,,,,,,,,,,
+jidfoua0,A1ZD8RU6YB0VEU,test,test2,27,12,21,20,17,17,,,,,,
+jicjg66g,A1RU9BQLDZ1DSY,debrief,test5,73,74,74,88,79,91,25-39,26,Graduate,17,good,
+jide9h6e,A1KQWBK5WHCNYQ,debrief,,,,,,,,25-39,female,Bachelors,17,Good luck with your study.,
+jidf094p,A3BEBDHWSLH1BQ,debrief,test2,77,72,80,71,64,65,25-39,FEMALE,Graduate,11,Leave feedback here GOOD,Chrome 66.0.3359.181 on Windows 8.1 64-bit
+jig73rep,ChrisTestOnChromeWindows,debrief,test2,29,26,26,24,25,29,18-25,ChromeTest,Some High School,9 or smaller,ChromeTest1,Chrome 67.0.3396.87 on Windows 10 64-bit
+jidf0fol,ACAD54DT9FU7U,debrief,test2,19,18,39,46,50,61,25-39,FEMALE,Bachelors,15,"The experiment was about visual perception with sliders, it is important to check an individual's visual abilities and perception in a short time.
+
+nice study",Chrome 67.0.3396.79 on Windows 10 64-bit
+jidh991k,A1ZWDUFNFILYJJ,debrief,,,,,,,,25-39,male,Bachelors,dontknow,nice survey,Chrome 67.0.3396.87 on Windows Server 2008 R2 / 7
+jid7s2z9,ANNV3E6CIVCW4,debrief,test5,79,100,100,98,100,100,25-39,MALE,Bachelors,13,IT'S GOOD,
+jidf9s02,A1GFGZJPLCHHFH,consent,,,,,,,,,,,,,
+jidanjg3,A2TY9UFU76QU6K,debrief,test5,49,52,52,53,51,50,25-39,MALE,Bachelors,15,The instructions were helpful to complete the task easily. Thanx,
+jid7i0il,AAWX7QFQUNM6D,debrief,test5,53,53,55,48,50,49,25-39,Male,High School,dontknow,Thank you too.,
+jiddq9uq,AAAL4RENVAPML,debrief,test5,53,14,16,78,78,47,25-39,Female,Bachelors,15,This is nice slider game.,
+jig5n0tp,ChrisTestOnWindow,debrief,test2,21,21,20,21,20,20,18-25,TesOnWin,Some High School,9 or smaller,IE Browser on windows doesn't work well,IE 11.0 32-bit on Windows Server 2008 R2 / 7 64-bit
+jid78r99,A6GS1C9J3ARSB,consent,,,,,,,,,,,,,
+jichpnga,A1RU9BQLDZ1DSY,consent,,,,,,,,,,,,,
+jig65uqt,testie,demographics,test2,24,21,24,21,26,27,18-25,testie,Bachelors,9 or smaller,,IE 11.0 32-bit on Windows Server 2008 R2 / 7 64-bit
+jidijx9i,993919e0-543b-4618-aad5-4b47ab03f61b,debrief,test2,78,62,44,56,32,52,25-39,female,Bachelors,15,Leave feedback here,Chrome 66.0.3359.181 on Windows Server 2008 R2 / 7
+jidf9j8i,A1GFGZJPLCHHFH,consent,,,,,,,,,,,,,
+jidf76wu,A1GFGZJPLCHHFH,consent,,,,,,,,,,,,,
+jidv55mq,A171SF2UF7YUN4,debrief,test2,21,17,24,20,18,17,25-39,male,Bachelors,19,nice,Chrome 66.0.3359.181 on Windows Server 2008 R2 / 7 64-bit
+jidfsclv,A1DIXDR0Y7KXMT,debrief,test2,42,78,56,21,67,24,25-39,female,Graduate,13,it is very good hit,Chrome 66.0.3359.181 on Windows Server 2008 R2 / 7
+jidf0a9n,A2NHPETX25VH3Q,debrief,,,,,,,,25-39,MALE,Graduate,11,IT'S GOOD,Chrome 66.0.3359.181 on Windows Server 2008 R2 / 7
+jidh22h6,A1S5IGVH3CF8XZ,debrief,test2,33,21,22,28,15,28,25-39,Male,Bachelors,13,"identify the value of a slider
+
+thank you!",Chrome 66.0.3359.181 on Windows 10 64-bit
+jid7a6qa,A23782O23HSPLA,debrief,,,,,,,,25-39,MALE,Graduate,15,GOOD SURVEY...,
+jidg8oor,A1GFGZJPLCHHFH,demographics,test2,78,19,41,76,96,48,25-39,male,Graduate,15,,Chrome 67.0.3396.87 on Windows Server 2008 R2 / 7
+jid8q72m,A3MFK5UEUG95M3,demographics,test5,53,53,53,49,54,52,25-39,male,Bachelors,15,,
+jicjcp7l,A1RU9BQLDZ1DSY,consent,,,,,,,,,,,,,
+jidf0gnv,A1GFGZJPLCHHFH,consent,,,,,,,,,,,,,
+jidxzvbr,A6OKUCH5O3P2O,debrief,,,,,,,,,,,,Leave feedback herE,
+jidf3m55,A566S0J4H23DI,debrief,test2,38,19,16,10,11,20,60+,male,Graduate,11,no feedback ,Chrome 66.0.3359.203 on Chrome OS 64-bit
+jig2h5r4,A1OU8F92A7M3MR,consent,,,,,,,,,,,,,
+jidfc85a,A1GFGZJPLCHHFH,consent,,,,,,,,,,,,,
+jidfqi6s,AJ204D5LUWTVY,debrief,,,,,,,,60+,Female,Graduate,15,Good survey,Chrome 67.0.3396.62 on Windows 10 64-bit
+jidf5x8y,A1GFGZJPLCHHFH,consent,,,,,,,,,,,,,
+jid7cp5u,A6GS1C9J3ARSB,debrief,test5,4,8,30,40,50,51,25-39,Male,Graduate,15,good,
+jidg8df1,A1GFGZJPLCHHFH,consent,,,,,,,,,,,,,
+jidg7qaw,A1GFGZJPLCHHFH,consent,,,,,,,,,,,,,
+jidf2ieo,A2VFEDAK5C1E1O,consent,,,,,,,,,,,,,
+jidf0vyq,A1FDNT3BD1Y9N0,demographics,test2,24,25,94,29,30,26,50-59,male,High School,17,,Firefox 60.0 on Windows 10 64-bit
+jifehtik,5101edbc-9b5b-45a6-b8ba-bc774fe77499,debrief,test2,59,59,78,34,40,24,18-25,male,Bachelors,19,Leave feedback here,Chrome 67.0.3396.87 on Windows Server 2008 R2 / 7
+jid83gmb,A2Z9HR2IBD75R9,demographics,,,,,,,,25-39,FEMALE,Graduate,21,,
+jidf15we,A3PLRMX7LGFL0A,debrief,test2,41,59,61,67,76,62,60+,Female,Graduate,19,Nice task.,Chrome 66.0.3359.181 on Windows Server 2008 R2 / 7 64-bit
+jig5r4ci,ChrisTestOnFirefoxOnWindows,consent,,,,,,,,,,,,,
+jig34l40,happy,debrief,test2,36,65,87,56,85,72,18-25,Happy,Some High School,9 or smaller,ChrisTestForever,Chrome 67.0.3396.87 on OS X 10.12.6 64-bit
+jifc13eg,A7WVKWZKY0IRD,debrief,test2,20,10,17,15,13,13,25-39,Female,Graduate,11,n/a,Chrome 66.0.3359.203 on Chrome OS 64-bit
+jidfae7h,A1GFGZJPLCHHFH,consent,,,,,,,,,,,,,
+jid81r7y,ABVPW8753ZBJO,debrief,test5,51,48,51,48,50,51,25-39,male,Bachelors,19,nice,
+jid6wyg3,A2541C8MY0BYV3,consent,,,,,,,,,,,,,
+jidf012q,A3NDOGHRT2TGEH,debrief,,,,,,,,18-25,23,Graduate,13,Nothing,Chrome 66.0.3359.181 on Windows Server 2008 R2 / 7
+jig3alng,ChrisTest,consent,,,,,,,,,,,,,
+jienwkar,A2TCYNRAZWK8CC,consent,,,,,,,,,,,,,
+jidf094n,A1Q1HSGBD1POWV,debrief,test2,85,84,100,99,93,95,25-39,male,Graduate,19,Its very nice,Chrome 66.0.3359.181 on Windows Server 2008 R2 / 7 64-bit
+jidi5g2u,A3GWEBM7DX4L0I,consent,,,,,,,,,,,,,
+jid7a5jn,A3CI8WWVFXEW74,debrief,test5,47,49,57,53,47,53,18-25,Male,High School,17,Leave feedback here,
+jid7d9zb,AHFGWXN0A2PJM,debrief,test5,98,63,44,72,87,100,25-39,FEMALE,Graduate,21,Good task,
+jidf7q1a,A1GFGZJPLCHHFH,consent,,,,,,,,,,,,,
+jidh5709,A2CF2BD4Q0ZDJN,debrief,test2,25,17,26,25,28,25,50-59,male,Bachelors,21,Estimating slider position based upon slider shape,Chrome 67.0.3396.79 on Windows 10 64-bit
+jig2hooi,A1OU8F92A7M3MR,consent,,,,,,,,,,,,,
+jidghhgp,A1Z6F6EIUJFC6T,debrief,,,,,,,,25-39,MALE,Bachelors,17,This is nice task,Chrome 66.0.3359.181 on Windows Server 2008 R2 / 7
+jid997hd,A13XXMDHOULEZ7,debrief,test5,49,51,54,50,49,50,40-49,female,Graduate,15,No feedback.,
