@@ -146,7 +146,7 @@ input[type=range]::-ms-tooltip {
     background-color: #FFFFFF;
     border-color: dimgrey;
     border-style:solid;
-    width: 152px;
+    width: 150px;
     height: 50px;
     border-top-right-radius: 20px;
     float: left;
